@@ -1,0 +1,37 @@
+{
+  "name": "money-manager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source, self-hosted personal finance and budgeting.",
+  "type": "module",
+  "packageManager": "pnpm@12.14.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test -- --coverage --coverage.include='src/**' --coverage.reporter=text-summary",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "db:generate": "pnpm --filter @mm/db generate",
+    "db:migrate": "pnpm --filter @mm/worker migrate",
+    "db:seed": "pnpm --filter @mm/db seed",
+    "keys:generate": "pnpm --filter @mm/crypto keys:generate",
+    "setup-token": "pnpm --filter @mm/db setup-token",
+    "recover-access": "pnpm --filter @mm/worker recover",
+    "dev:setup": "pnpm --filter @mm/crypto dev-env"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.6",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^24.19.2",
+    "@vitest/coverage-v8": "^5.1.0",
+    "turbo": "^2.11.10",
+    "typescript": "^6.0.3",
+    "vitest": "^5.1.0"
+  },
+  "license": "AGPL-3.0-or-later"
+}

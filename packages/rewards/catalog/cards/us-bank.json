@@ -1,0 +1,131 @@
+{
+  "cards": [
+    {
+      "slug": "us_bank_altitude_reserve",
+      "issuer": "U.S. Bank",
+      "name": "U.S. Bank Altitude Reserve Visa Infinite Card",
+      "network": "visa",
+      "annualFee": 400,
+      "program": "usbank_altitude",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 10,
+          "channel": "portal",
+          "note": "Prepaid hotels and car rentals booked in the U.S. Bank Travel Center, from December 15, 2025."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Eligible travel such as airlines, hotels, car rentals, taxis, trains and cruise lines. The December 2025 change announcements did not mention this rate, so it is assumed unchanged; no 2026 source states it explicitly."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Flights booked in the U.S. Bank Travel Center, from December 15, 2025. Before then they earned the 3x travel rate."
+        }
+      ],
+      "business": false,
+      "aliases": ["Altitude Reserve", "U.S. Bank Altitude Reserve", "USBAR"],
+      "sources": [
+        {
+          "url": "https://frequentmiler.com/us-bank-altitude-reserve-no-longer-accepting-new-applications/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/us-bank-altitude-reserve-card-discontinued/"
+        },
+        {
+          "url": "https://awardwallet.com/credit-cards/us-bank-altitude-reserve-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/it-pays-to-go-mobile-u-s-bank-altitude-reserve-visa-infinite-card-review/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/u-s-bank-altitude-reserve-325-credit-works-on-dining-purchases-permanent-change-0-authorized-user-fee/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/u-s-bank-to-make-negative-changes-to-u-s-bank-altitude-reserve-travel-transfers-1%C2%A2-per-point-instead-of-1-5%C2%A2"
+        },
+        {
+          "url": "https://awardwallet.com/news/credit-cards/us-bank-altitude-reserve-card-2025-changes/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/us-bank-altitude-reserve-card-changes-coming"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "No longer open to new applicants (since 2024-11-11). Not modeled: 3x on purchases paid with mobile wallet, since the app can't tell how a purchase was paid. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: U.S. Bank travel portal hotels and U.S. Bank travel portal car rentals (10x); U.S. Bank travel portal flights (5x). U.S. Bank stopped taking applications on November 11, 2024; existing cardholders keep and renew the card, and some holders of other Altitude cards report product changing into it. Authorized user cards have been free since early 2021. Points transfer to airline and hotel programs from August 11, 2026 (see the pts:usbank_altitude currency). The issuer's product page no longer exists, so terms come from review sites."
+    },
+    {
+      "slug": "us_bank_cash_plus",
+      "issuer": "U.S. Bank",
+      "name": "U.S. Bank Cash+ Visa Signature Card",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 3,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "multiplier": 5,
+          "cap": {
+            "amount": 2000,
+            "period": "quarter"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "pick": {
+            "mode": "user_choice",
+            "eligible": [
+              "utilities",
+              "fitness",
+              "phone_internet",
+              "streaming",
+              "transit",
+              "rideshare"
+            ]
+          },
+          "note": "Choose two each quarter from: fast food; home utilities; TV, internet and streaming; department stores; cell phone; electronics stores; sporting goods; furniture stores; movie theaters; ground transportation; gyms and fitness centers; select clothing stores."
+        },
+        {
+          "categories": [],
+          "multiplier": 2,
+          "channel": "any",
+          "pick": {
+            "mode": "user_choice",
+            "eligible": ["groceries", "online_groceries", "dining", "ev_charging", "gas"]
+          },
+          "note": "Choose one each quarter: grocery stores and grocery delivery; restaurants; gas stations and EV charging. Uncapped. Grocery and gas at discount stores, supercenters and wholesale clubs earn 1%."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Prepaid air, hotel and car reservations booked directly in the U.S. Bank Travel Center (1% base plus 4%). No cap stated."
+        }
+      ],
+      "business": false,
+      "aliases": ["Cash+", "Cash Plus", "US Bank Cash Plus"],
+      "sources": [
+        {
+          "url": "https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html"
+        }
+      ],
+      "verifiedAt": "2026-11-21",
+      "notes": "5% on two categories you choose: choices with no matching category are left out (dining fast food, department stores, telecom wireless, electronics stores, sporting goods, furniture, entertainment movie theaters, apparel). 5% on two categories you choose: the issuer applies it to 2 categories at once; each chosen category counts. OCCB doesn't state a foreign transaction fee; 3% is assumed."
+    }
+  ]
+}

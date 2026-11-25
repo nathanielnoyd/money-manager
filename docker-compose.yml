@@ -1,0 +1,217 @@
+# Money Manager: production stack.
+#
+#   pnpm keys:generate                                  # once: creates ./secrets
+#   cp .env.example .env && $EDITOR .env
+#   docker compose up -d --build                        # profiles come from COMPOSE_PROFILES in .env
+#   docker compose logs migrate                         # first run: copy the setup token
+#
+# No service publishes a port on the host. The app is reachable only through the
+# tailscale or cloudflared container.
+
+name: money-manager
+
+x-hardening: &hardening
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  restart: unless-stopped
+  logging:
+    driver: json-file
+    options: { max-size: "10m", max-file: "3" }
+
+x-app-env: &app-env
+  DATABASE_HOST: db
+  DATABASE_NAME: money_manager
+  APP_DB_PASSWORD_FILE: /run/secrets/app_db_password
+  LOG_LEVEL: ${LOG_LEVEL:-info}
+  # Where "today" and "this month" begin, and the zone cron schedules are read in.
+  TZ: ${TZ:-UTC}
+
+services:
+  db:
+    image: postgres:18-alpine@sha256:9ba53c7d41ea093baf5c1ba635ba5434c4f979880527d49bb7d9237d3193085b
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mm_admin
+      POSTGRES_DB: money_manager
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_admin_password
+      POSTGRES_INITDB_ARGS: "--data-checksums"
+    secrets: [postgres_admin_password]
+    volumes:
+      - pgdata:/var/lib/postgresql
+    networks: [internal]
+    shm_size: 256mb
+    security_opt: ["no-new-privileges:true"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mm_admin -d money_manager"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  migrate:
+    <<: *hardening
+    image: ${MM_IMAGE_PREFIX:-money-manager}-worker:${MM_VERSION:-local}
+    build: { context: ., dockerfile: docker/Dockerfile, target: worker }
+    command: ["node", "dist/migrate.mjs"]
+    restart: "no"
+    environment:
+      <<: *app-env
+      POSTGRES_ADMIN_PASSWORD_FILE: /run/secrets/postgres_admin_password
+    secrets: [postgres_admin_password, app_db_password]
+    networks: [internal]
+    depends_on:
+      db: { condition: service_healthy }
+
+  web:
+    <<: *hardening
+    image: ${MM_IMAGE_PREFIX:-money-manager}-web:${MM_VERSION:-local}
+    build: { context: ., dockerfile: docker/Dockerfile, target: web }
+    environment:
+      <<: *app-env
+      APP_URL: ${APP_URL:?Set APP_URL in .env (e.g. https://money.your-tailnet.ts.net)}
+      SOURCE_URL: ${SOURCE_URL:-}
+      ACCESS_MODE: ${ACCESS_MODE:-tailscale}
+      TAILSCALE_ALLOWED_USERS: ${TAILSCALE_ALLOWED_USERS:-}
+      CF_ACCESS_TEAM_DOMAIN: ${CF_ACCESS_TEAM_DOMAIN:-}
+      CF_ACCESS_AUD: ${CF_ACCESS_AUD:-}
+      SIMPLEFIN_ALLOWED_HOSTS: ${SIMPLEFIN_ALLOWED_HOSTS:-}
+      PLAID_CLIENT_ID: ${PLAID_CLIENT_ID:-}
+      PLAID_SECRET: ${PLAID_SECRET:-}
+      PLAID_ENV: ${PLAID_ENV:-sandbox}
+      TELLER_APPLICATION_ID: ${TELLER_APPLICATION_ID:-}
+      TELLER_ENV: ${TELLER_ENV:-sandbox}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      AI_MODEL: ${AI_MODEL:-}
+      PLAID_REDIRECT_URI: ${PLAID_REDIRECT_URI:-}
+      NTFY_ALLOW_PRIVATE: ${NTFY_ALLOW_PRIVATE:-}
+      APP_NAME: ${APP_NAME:-Money Manager}
+      AUTH_ENCRYPTION_KEY_FILE: /run/secrets/auth_encryption_key
+      WORKER_PUBLIC_KEY_FILE: /run/secrets/worker_public_key
+    secrets: [app_db_password, auth_encryption_key, worker_public_key]
+    tmpfs:
+      - /tmp
+      - /app/apps/web/.next/cache:uid=1000,gid=1000
+    networks: [internal, edge]
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+
+  worker:
+    <<: *hardening
+    image: ${MM_IMAGE_PREFIX:-money-manager}-worker:${MM_VERSION:-local}
+    environment:
+      <<: *app-env
+      WORKER_KEYS_FILE: /run/secrets/worker_keys
+      SYNC_CRON: ${SYNC_CRON:-*/15 * * * *}
+      SYNC_INTERVAL_HOURS: ${SYNC_INTERVAL_HOURS:-6}
+      DIGEST_CRON: ${DIGEST_CRON:-0 8 * * 1}
+      CATALOG_REFRESH_CRON: ${CATALOG_REFRESH_CRON:-0 9 3 * *}
+      NTFY_ALLOW_PRIVATE: ${NTFY_ALLOW_PRIVATE:-}
+      SIMPLEFIN_ALLOWED_HOSTS: ${SIMPLEFIN_ALLOWED_HOSTS:-}
+      PLAID_CLIENT_ID: ${PLAID_CLIENT_ID:-}
+      PLAID_SECRET: ${PLAID_SECRET:-}
+      PLAID_ENV: ${PLAID_ENV:-sandbox}
+      TELLER_APPLICATION_ID: ${TELLER_APPLICATION_ID:-}
+      TELLER_ENV: ${TELLER_ENV:-sandbox}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      AI_MODEL: ${AI_MODEL:-}
+    secrets: [app_db_password, worker_keys]
+    tmpfs: [/tmp]
+    networks: [internal, egress]
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+
+  # ── Encrypted nightly backups (profile: backup) ──
+  backup:
+    profiles: [backup]
+    image: ${MM_IMAGE_PREFIX:-money-manager}-backup:${MM_VERSION:-local}
+    build: { context: docker/backup }
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped
+    environment:
+      DATABASE_HOST: db
+      PGPASSWORD_FILE: /run/secrets/postgres_admin_password
+      RESTIC_PASSWORD_FILE: /run/secrets/restic_password
+      RESTIC_REPOSITORY: ${RESTIC_REPOSITORY:-/backups/restic}
+      AWS_ACCESS_KEY_ID: ${BACKUP_S3_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${BACKUP_S3_SECRET_ACCESS_KEY:-}
+      B2_ACCOUNT_ID: ${BACKUP_B2_ACCOUNT_ID:-}
+      B2_ACCOUNT_KEY: ${BACKUP_B2_ACCOUNT_KEY:-}
+      BACKUP_TIME: ${BACKUP_TIME:-03:30}
+      TZ: ${TZ:-UTC}
+    secrets: [postgres_admin_password, restic_password]
+    tmpfs: [/tmp]
+    volumes:
+      - backups:/backups
+    networks: [internal, egress]
+    depends_on:
+      db: { condition: service_healthy }
+    healthcheck:
+      # Healthy until the first backup, then only if the last success is under 26h old.
+      test:
+        [
+          "CMD",
+          "sh",
+          "-c",
+          "test ! -f /tmp/last-backup || test $$(( $$(date +%s) - $$(cat /tmp/last-backup) )) -lt 93600",
+        ]
+      interval: 1h
+      start_period: 30s
+
+  # ── Access: pick ONE profile ──
+
+  tailscale:
+    profiles: [tailscale]
+    # Pinned by digest (Renovate bumps it). Override in compose.override.yml if needed.
+    image: tailscale/tailscale:stable@sha256:ed6480b33c6eb67c9cbd203ed42b9fb57e361986725b6856def71b7a3d9e276c
+    hostname: ${TS_HOSTNAME:-money}
+    restart: unless-stopped
+    environment:
+      TS_AUTHKEY: ${TS_AUTHKEY:-}
+      TS_STATE_DIR: /var/lib/tailscale
+      TS_SERVE_CONFIG: /config/serve.json
+      TS_USERSPACE: "true"
+      TS_EXTRA_ARGS: ${TS_EXTRA_ARGS:-}
+    volumes:
+      - tailscale-state:/var/lib/tailscale
+      - ./docker/tailscale:/config:ro
+    networks: [edge]
+    security_opt: ["no-new-privileges:true"]
+    depends_on: [web]
+
+  cloudflared:
+    profiles: [cloudflare]
+    # Pinned by digest (Renovate bumps it). Override in compose.override.yml if needed.
+    image: cloudflare/cloudflared:latest@sha256:4955524aeaa379e154023d5a027c250f7b35041a2e7e950cf13f144bc9b9c5ba
+    command: ["tunnel", "--no-autoupdate", "run"]
+    restart: unless-stopped
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
+    networks: [edge]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    depends_on: [web]
+
+networks:
+  # Postgres lives here and nowhere else. No route to the internet.
+  internal:
+    internal: true
+  # Access container ↔ web. Has egress (Tailscale/Cloudflare control planes, Access JWKS).
+  edge: {}
+  # Worker → bank-data aggregators.
+  egress: {}
+
+volumes:
+  pgdata:
+  tailscale-state:
+  backups:
+
+secrets:
+  postgres_admin_password: { file: ./secrets/postgres_admin_password }
+  app_db_password: { file: ./secrets/app_db_password }
+  auth_encryption_key: { file: ./secrets/auth_encryption_key }
+  worker_public_key: { file: ./secrets/worker_public_key }
+  worker_keys: { file: ./secrets/worker_keys }
+  restic_password: { file: ./secrets/restic_password }

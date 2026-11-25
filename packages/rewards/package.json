@@ -1,0 +1,25 @@
+{
+  "name": "@mm/rewards",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Credit card rewards catalog (generated from Open Credit Card Benefits, CC BY 4.0) and the points-earning engine.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node ../../node_modules/vitest/vitest.mjs run",
+    "catalog:validate": "tsx src/cli/validate.ts",
+    "catalog:import": "tsx src/cli/import-occb.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "vitest": "^5.1.0",
+    "yaml": "2.9.1"
+  },
+  "license": "AGPL-3.0-or-later"
+}

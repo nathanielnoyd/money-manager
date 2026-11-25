@@ -1,0 +1,20 @@
+# Local development: only Postgres, bound to localhost. Run the apps with `pnpm dev`.
+name: money-manager-dev
+services:
+  db:
+    image: postgres:18-alpine@sha256:9ba53c7d41ea093baf5c1ba635ba5434c4f979880527d49bb7d9237d3193085b
+    environment:
+      POSTGRES_USER: mm_admin
+      POSTGRES_PASSWORD: dev-admin-password
+      POSTGRES_DB: money_manager
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata-dev:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mm_admin -d money_manager"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+volumes:
+  pgdata-dev:

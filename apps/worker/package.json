@@ -1,0 +1,34 @@
+{
+  "name": "@mm/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../../.env.development src/index.ts",
+    "build": "node build.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "migrate": "tsx --env-file-if-exists=../../.env.development src/migrate.ts",
+    "recover": "tsx --env-file-if-exists=../../.env.development src/recover-cli.ts",
+    "test": "node --env-file-if-exists=../../.env.development ../../node_modules/vitest/vitest.mjs run"
+  },
+  "dependencies": {
+    "@mm/ai": "workspace:*",
+    "@mm/connectors": "workspace:*",
+    "@mm/core": "workspace:*",
+    "@mm/crypto": "workspace:*",
+    "@mm/db": "workspace:*",
+    "@mm/rewards": "workspace:*",
+    "@mm/services": "workspace:*",
+    "drizzle-orm": "^0.45.4",
+    "pg": "^8.23.1",
+    "pg-boss": "^12.38.1",
+    "pino": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "vitest": "^5.1.0"
+  },
+  "license": "AGPL-3.0-or-later"
+}

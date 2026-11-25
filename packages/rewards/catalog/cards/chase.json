@@ -1,0 +1,1502 @@
+{
+  "cards": [
+    {
+      "slug": "chase_freedom_flex",
+      "issuer": "Chase",
+      "name": "Chase Freedom Flex",
+      "network": "mastercard",
+      "annualFee": 0,
+      "program": "chase_ur",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "multiplier": 5,
+          "cap": {
+            "amount": 1500,
+            "period": "quarter"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "rotating": true,
+          "note": "5% on up to $1,500 in combined bonus-category purchases each quarter after activation, then the card's other rates apply. Donations count only to the named charity. Requires enrollment or activation."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Includes takeout and eligible delivery."
+        },
+        {
+          "categories": ["drugstores"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 2,
+          "channel": "any",
+          "validTo": "2027-09-30",
+          "note": "2% total on Lyft rides and products booked in the Lyft app."
+        }
+      ],
+      "rotating": {
+        "2026-Q1": ["dining"],
+        "2026-Q2": ["portal_travel"],
+        "2026-Q3": ["gas", "ev_charging", "transit", "entertainment"],
+        "2026-Q4": ["groceries", "dining"],
+        "2027-Q1": ["groceries", "streaming"]
+      },
+      "business": false,
+      "aliases": ["Freedom Flex", "CFF"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex"
+        },
+        {
+          "url": "https://media.chase.com/news/chase-freedom-2026-q1-categories"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/chase-freedom-flex-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/chase-freedom-flex-cellphone-protection-ending/"
+        },
+        {
+          "url": "https://awardwallet.com/news/credit-cards/chase-freedom-flex-removing-foreign-transaction-fees/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Rotating categories that are single merchants are not modeled: Norwegian Cruise Line, American Heart Association donations, Amazon.com, Feeding America donations, United Way donations, American Red Cross donations. World Elite Mastercard. Earns Ultimate Rewards points sold as cash back; points transfer to partners only when combined with a Sapphire Preferred, Sapphire Reserve or Ink Business Preferred. Charged a 3% foreign transaction fee until September 19, 2026."
+    },
+    {
+      "slug": "chase_freedom_unlimited",
+      "issuer": "Chase",
+      "name": "Chase Freedom Unlimited",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "chase_ur",
+      "fxFeePercent": 3,
+      "base": 1.5,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["drugstores"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 2,
+          "channel": "any",
+          "validTo": "2027-09-30",
+          "note": "2% total on Lyft rides, bike and scooter rides and Lyft subscriptions booked in the Lyft app; excludes gift cards, car rentals and fees."
+        }
+      ],
+      "business": false,
+      "aliases": ["Freedom Unlimited", "CFU"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/chase/chase-freedom-unlimited/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Visa Signature. Charges a 3% foreign transaction fee. Earns Ultimate Rewards points sold as cash back; points transfer to partners only when combined with a Sapphire Preferred, Sapphire Reserve or Ink Business Preferred."
+    },
+    {
+      "slug": "chase_ihg_business",
+      "issuer": "Chase",
+      "name": "IHG One Rewards Business Credit Card",
+      "network": "mastercard",
+      "annualFee": 200,
+      "program": "ihg_one",
+      "fxFeePercent": 0,
+      "base": 3,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "IHG",
+            "HOLIDAY INN",
+            "CROWNE PLAZA",
+            "INTERCONTINENTAL",
+            "KIMPTON",
+            "STAYBRIDGE",
+            "CANDLEWOOD",
+            "HOTEL INDIGO"
+          ],
+          "multiplier": 10,
+          "channel": "any",
+          "note": "Card points at IHG hotels; IHG One Rewards membership and elite bonuses are earned separately."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2026-12-31",
+          "note": "Kept for all cardmembers through December 31, 2026, then retired; direct airfare and car rentals keep 5x."
+        },
+        {
+          "categories": ["office_supply"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2026-12-31",
+          "note": "Kept for all cardmembers through December 31, 2026, then 3x."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Includes takeout and eligible delivery."
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 5,
+          "channel": "any"
+        },
+        {
+          "categories": ["advertising"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Social media and search engine advertising only."
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 5,
+          "channel": "any"
+        },
+        {
+          "categories": ["car_rental"],
+          "multiplier": 5,
+          "channel": "any"
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "IHG One Rewards Premier Business Credit Card",
+        "IHG Premier Business",
+        "IHG Business"
+      ],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/business-credit-cards/IHG/business"
+        },
+        {
+          "url": "https://www.chase.com/business/credit-cards/ihg/business"
+        },
+        {
+          "url": "https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/ihg-chase-credit-card-changes/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/ihg-credit-card-refresh-2026/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/chase-ihg-premier-business-credit-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/ihg-credit-card-changes-2026"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: IHG One Rewards qualifying nights earned alongside the points (0.0004 per dollar). Changes announced for 2027-01-01 are not reflected yet. Renamed from IHG One Rewards Premier Business in the October 2026 refresh. Employee cards have no annual fee. Points bought from IHG at full price with the card are discounted at least 30% (20% before the refresh); not modeled."
+    },
+    {
+      "slug": "chase_ihg_premier",
+      "issuer": "Chase",
+      "name": "IHG One Rewards Premier Credit Card",
+      "network": "mastercard",
+      "annualFee": 150,
+      "program": "ihg_one",
+      "fxFeePercent": 0,
+      "base": 3,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "IHG",
+            "HOLIDAY INN",
+            "CROWNE PLAZA",
+            "INTERCONTINENTAL",
+            "KIMPTON",
+            "STAYBRIDGE",
+            "CANDLEWOOD",
+            "HOTEL INDIGO"
+          ],
+          "multiplier": 10,
+          "channel": "any",
+          "note": "Card points at IHG hotels; IHG One Rewards membership and elite bonuses are earned separately."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2026-12-31",
+          "note": "Kept for all cardmembers through December 31, 2026, then retired."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 5,
+          "channel": "any"
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 5,
+          "channel": "any"
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 5,
+          "channel": "any"
+        },
+        {
+          "categories": ["car_rental"],
+          "multiplier": 5,
+          "channel": "any"
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 5,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": ["IHG Premier", "IHG Rewards Club Premier"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier"
+        },
+        {
+          "url": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-protection"
+        },
+        {
+          "url": "https://frequentmiler.com/?p=297051"
+        },
+        {
+          "url": "https://onemileatatime.com/news/ihg-chase-credit-card-changes/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/ihg-credit-card-refresh-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: IHG One Rewards qualifying nights earned alongside the points (0.0004 per dollar). Changes announced for 2027-01-01 are not reflected yet."
+    },
+    {
+      "slug": "chase_ihg_premier_select",
+      "issuer": "Chase",
+      "name": "IHG One Rewards Premier Select Credit Card",
+      "network": "mastercard",
+      "annualFee": 350,
+      "program": "ihg_one",
+      "fxFeePercent": 0,
+      "base": 3,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "IHG",
+            "HOLIDAY INN",
+            "CROWNE PLAZA",
+            "INTERCONTINENTAL",
+            "KIMPTON",
+            "STAYBRIDGE",
+            "CANDLEWOOD",
+            "HOTEL INDIGO"
+          ],
+          "multiplier": 12,
+          "channel": "any",
+          "note": "Card points at participating IHG hotels; IHG One Rewards membership and Platinum Elite bonuses are earned separately (up to 28x in total)."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Includes takeout and eligible delivery."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "All other travel, including rideshare; IHG hotel purchases earn 12x instead."
+        }
+      ],
+      "business": false,
+      "aliases": ["IHG Premier Select", "IHG One Rewards Premier Select"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier-select"
+        },
+        {
+          "url": "https://www.chase.com/personal/credit-cards/ihg/premierselect"
+        },
+        {
+          "url": "https://media.chase.com/news/ihg-premier-select-card-portfolio-updates"
+        },
+        {
+          "url": "https://thepointsguy.com/news/ihg-premier-select-card-launch/"
+        },
+        {
+          "url": "https://onemileatatime.com/go/cc-chase-ihgpremierselect-review/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Not modeled: IHG One Rewards qualifying nights earned alongside the points (0.0004 per dollar). The top tier of the Chase IHG personal cards, announced and opened to applicants on October 1, 2026 alongside the refresh of the IHG Premier. Points bought from IHG with the card are discounted 30%; not modeled."
+    },
+    {
+      "slug": "chase_ink_business_cash",
+      "issuer": "Chase",
+      "name": "Ink Business Cash Credit Card",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "chase_ur",
+      "fxFeePercent": 3,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["office_supply", "phone_internet"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 25000,
+            "period": "cardmember_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Combined $25,000 a year at office supply stores and on internet, cable and phone services; then 1x."
+        },
+        {
+          "categories": ["gas", "dining"],
+          "multiplier": 2,
+          "cap": {
+            "amount": 25000,
+            "period": "cardmember_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Combined $25,000 a year at gas stations and restaurants; then 1x."
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2027-09-30",
+          "note": "5 points per $1 total on Lyft rides bought in the Lyft app; excludes gift cards, car rentals, vehicle service centers and other Lyft products. Start date of this promotion is not modeled."
+        }
+      ],
+      "business": true,
+      "aliases": ["Ink Business Cash", "Chase Ink Cash", "CIC"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/business-credit-cards/ink/cash"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/credit-card-review-ink-business-cash-credit-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/chase-instacart-benefits-more-cards/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/credit-cards/news/chase-adds-instacart-benefits-to-some-credit-cards"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Marketed as cash back but earns Ultimate Rewards points; they transfer to partners only when combined with a Sapphire Preferred, Sapphire Reserve or Ink Business Preferred. 3% foreign transaction fee (not expressible as a fee change)."
+    },
+    {
+      "slug": "chase_ink_business_preferred",
+      "issuer": "Chase",
+      "name": "Ink Business Preferred Credit Card",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "chase_ur",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare",
+            "shipping",
+            "advertising",
+            "phone_internet"
+          ],
+          "multiplier": 3,
+          "cap": {
+            "amount": 150000,
+            "period": "cardmember_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Combined cap across travel, shipping, social media and search engine advertising, and internet, cable and phone services; then 1x. Advertising counts only on social media and search engines."
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2027-09-30",
+          "note": "5 points per $1 total on Lyft rides bought in the Lyft app; excludes gift cards, car rentals, vehicle service centers and other Lyft products. Start date of this promotion is not modeled."
+        }
+      ],
+      "business": true,
+      "aliases": ["Ink Business Preferred", "Chase Ink Preferred", "CIP"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/business-credit-cards/ink/business-preferred"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/ink-business-preferred-card-review/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/chase-ink-business-preferred-credit-card"
+        },
+        {
+          "url": "https://onemileatatime.com/?p=343735"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Holding this card lets Ultimate Rewards earned on other Chase cards be combined here for partner transfers. World of Hyatt transfers from this card fell to 4:3 on October 1, 2026 (modeled on the currency)."
+    },
+    {
+      "slug": "chase_ink_business_unlimited",
+      "issuer": "Chase",
+      "name": "Ink Business Unlimited Credit Card",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "chase_ur",
+      "fxFeePercent": 3,
+      "base": 1.5,
+      "earn": [
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2027-09-30",
+          "note": "5 points per $1 total on Lyft rides bought in the Lyft app; excludes gift cards, car rentals, vehicle service centers and other Lyft products. Start date of this promotion is not modeled."
+        }
+      ],
+      "business": true,
+      "aliases": ["Ink Business Unlimited", "Chase Ink Unlimited", "CIU"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/business-credit-cards/ink/unlimited"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/ink-business-unlimited-credit-card-review/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/chase-instacart-benefits-more-cards/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/credit-cards/news/chase-adds-instacart-benefits-to-some-credit-cards"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Marketed as cash back but earns Ultimate Rewards points; they transfer to partners only when combined with a Sapphire Preferred, Sapphire Reserve or Ink Business Preferred. 3% foreign transaction fee (not expressible as a fee change)."
+    },
+    {
+      "slug": "chase_marriott_bonvoy_boundless",
+      "issuer": "Chase",
+      "name": "Marriott Bonvoy Boundless Credit Card",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "marriott_bonvoy",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "MARRIOTT",
+            "RITZ-CARLTON",
+            "RITZ CARLTON",
+            "ST. REGIS",
+            "ST REGIS",
+            "WESTIN",
+            "SHERATON",
+            "W HOTEL",
+            "LE MERIDIEN",
+            "RENAISSANCE HOTEL",
+            "AUTOGRAPH COLLECTION",
+            "TRIBUTE PORTFOLIO",
+            "LUXURY COLLECTION",
+            "EDITION HOTEL",
+            "GAYLORD",
+            "DELTA HOTEL",
+            "COURTYARD",
+            "RESIDENCE INN",
+            "FAIRFIELD INN",
+            "SPRINGHILL SUITES",
+            "TOWNEPLACE",
+            "FOUR POINTS",
+            "ALOFT",
+            "MOXY",
+            "AC HOTEL"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Card points at participating Marriott Bonvoy hotels; Marriott base points (10x) and Silver Elite bonus are earned separately from the program."
+        },
+        {
+          "categories": ["gas", "groceries", "dining"],
+          "multiplier": 3,
+          "cap": {
+            "amount": 6000,
+            "period": "calendar_year"
+          },
+          "afterCap": 2,
+          "channel": "any",
+          "note": "3x on the first $6,000 of combined purchases at gas stations, grocery stores and restaurants each year, then 2x."
+        }
+      ],
+      "business": false,
+      "aliases": [
+        "Marriott Boundless",
+        "Chase Marriott Boundless",
+        "Marriott Rewards Premier Plus"
+      ],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/chase/reviews/marriott-bonvoy-boundless-credit-card-review/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/chases-marriott-boundless-card-airfare-benefit/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Marriott Bonvoy elite night credits earned alongside the points (0.0002 per dollar)."
+    },
+    {
+      "slug": "chase_marriott_bonvoy_bountiful",
+      "issuer": "Chase",
+      "name": "Marriott Bonvoy Bountiful Credit Card",
+      "network": "visa",
+      "annualFee": 250,
+      "program": "marriott_bonvoy",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "MARRIOTT",
+            "RITZ-CARLTON",
+            "RITZ CARLTON",
+            "ST. REGIS",
+            "ST REGIS",
+            "WESTIN",
+            "SHERATON",
+            "W HOTEL",
+            "LE MERIDIEN",
+            "RENAISSANCE HOTEL",
+            "AUTOGRAPH COLLECTION",
+            "TRIBUTE PORTFOLIO",
+            "LUXURY COLLECTION",
+            "EDITION HOTEL",
+            "GAYLORD",
+            "DELTA HOTEL",
+            "COURTYARD",
+            "RESIDENCE INN",
+            "FAIRFIELD INN",
+            "SPRINGHILL SUITES",
+            "TOWNEPLACE",
+            "FOUR POINTS",
+            "ALOFT",
+            "MOXY",
+            "AC HOTEL"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Card points at participating Marriott Bonvoy hotels; Marriott base points and the Gold Elite bonus are earned separately from the program."
+        },
+        {
+          "categories": ["groceries", "dining"],
+          "multiplier": 4,
+          "cap": {
+            "amount": 15000,
+            "period": "calendar_year"
+          },
+          "afterCap": 2,
+          "channel": "any",
+          "note": "4x on the first $15,000 of combined purchases at grocery stores and restaurants (including takeout and eligible delivery) each year, then 2x."
+        }
+      ],
+      "business": false,
+      "aliases": ["Marriott Bountiful", "Chase Marriott Bountiful", "Bonvoy Bountiful"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bountiful-card-review/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/marriott-bonvoy-bountiful-card"
+        },
+        {
+          "url": "https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "After 12 months, a personal Chase Marriott card such as this one can be product changed to The Ritz-Carlton Credit Card (us.chase.ritz-carlton), which is closed to new applicants."
+    },
+    {
+      "slug": "chase_prime_visa",
+      "issuer": "Chase",
+      "name": "Prime Visa",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "merchants": ["AMAZON", "AMZN", "AMAZON FRESH", "AMZN FRESH", "WHOLE FOODS", "WHOLEFDS"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Requires an eligible Prime membership (the card itself requires one). Excludes Whole Foods stores outside the US. Some reviews also list Prime Video."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Requires an eligible Prime membership."
+        },
+        {
+          "categories": ["dining", "gas", "transit", "rideshare"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Restaurants (including takeout and delivery), gas stations, and local transit and commuting including rideshare."
+        }
+      ],
+      "business": false,
+      "aliases": [
+        "Amazon Prime Visa",
+        "Amazon Prime Rewards Visa Signature",
+        "Prime Visa Signature"
+      ],
+      "sources": [
+        {
+          "url": "https://www.chase.com/personal/credit-cards/amazon"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/amazon-prime-rewards-visa-signature-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/prime-visa-current-offer/"
+        },
+        {
+          "url": "https://www.businesswire.com/news/home/20230501005242/en"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Requires an eligible Amazon Prime membership; without one the account is moved to the Amazon Visa. Renamed from Amazon Prime Rewards Visa Signature in May 2023. Points are worth 1 cent at Amazon checkout or as cash back."
+    },
+    {
+      "slug": "chase_ritz_carlton",
+      "issuer": "Chase",
+      "name": "The Ritz-Carlton Credit Card",
+      "network": "visa",
+      "annualFee": 450,
+      "program": "marriott_bonvoy",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "MARRIOTT",
+            "RITZ-CARLTON",
+            "RITZ CARLTON",
+            "ST. REGIS",
+            "ST REGIS",
+            "WESTIN",
+            "SHERATON",
+            "W HOTEL",
+            "LE MERIDIEN",
+            "RENAISSANCE HOTEL",
+            "AUTOGRAPH COLLECTION",
+            "TRIBUTE PORTFOLIO",
+            "LUXURY COLLECTION",
+            "EDITION HOTEL",
+            "GAYLORD",
+            "DELTA HOTEL",
+            "COURTYARD",
+            "RESIDENCE INN",
+            "FAIRFIELD INN",
+            "SPRINGHILL SUITES",
+            "TOWNEPLACE",
+            "FOUR POINTS",
+            "ALOFT",
+            "MOXY",
+            "AC HOTEL"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Card points at participating Marriott Bonvoy hotels, including The Ritz-Carlton; Marriott base points and the Gold Elite bonus are earned separately from the program."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["car_rental"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Airline purchases made directly with airlines."
+        }
+      ],
+      "business": false,
+      "aliases": [
+        "Ritz-Carlton Card",
+        "Chase Ritz-Carlton",
+        "Ritz-Carlton Rewards Credit Card",
+        "Ritz-Carlton Visa Infinite"
+      ],
+      "sources": [
+        {
+          "url": "https://marriott.chase.com/ritz-carlton/benefits"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/ritz-carlton-rewards-card-review/"
+        },
+        {
+          "url": "https://www.takerisksbehappy.com/chase-ritz-carlton-credit-card-review-marriott/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/chase/ritz-carlton-credit-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/ritz-carlton-rewards-card-applications-closed"
+        },
+        {
+          "url": "https://frequentmiler.com/chase-sapphire-reserve-ritz-carlton-cardholders-losing-restaurant-access-from-priority-pass/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/ritz-carlton-card-lounge-guest-access-change/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/chase-ritz-carlton-to-restrict-guest-lounge-access-from-2026/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "No longer open to new applicants (since 2018-07-26). Closed to new applications on July 26, 2018. Available only as a product change from a personal Chase Marriott Bonvoy card (Bold, Boundless or Bountiful) held at least 12 months, reportedly with a credit line of at least $10,000; Marriott Amex cards, business cards and non-Marriott Chase cards are not eligible."
+    },
+    {
+      "slug": "chase_sapphire_preferred",
+      "issuer": "Chase",
+      "name": "Sapphire Preferred",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "chase_ur",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["streaming"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["online_groceries"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Excludes Target, Walmart and wholesale clubs."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 2,
+          "channel": "any"
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2027-09-30"
+        },
+        {
+          "categories": ["ev_charging", "gas"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": [],
+          "merchants": ["AIRBNB", "VRBO", "HOMEAWAY", "PLUM GUIDE", "VACASA"],
+          "multiplier": 3,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": [],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/"
+        },
+        {
+          "url": "https://eyeoftheflyer.com/chase-sapphire-pref-visa"
+        }
+      ],
+      "verifiedAt": "2026-11-12"
+    },
+    {
+      "slug": "chase_sapphire_reserve",
+      "issuer": "Chase",
+      "name": "Sapphire Reserve",
+      "network": "visa",
+      "annualFee": 795,
+      "program": "chase_ur",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 8,
+          "channel": "portal"
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 4,
+          "channel": "any"
+        },
+        {
+          "categories": ["hotels"],
+          "multiplier": 4,
+          "channel": "any"
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2027-09-30"
+        }
+      ],
+      "business": false,
+      "aliases": [],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve"
+        },
+        {
+          "url": "https://frequentmiler.com/?p=267305"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/credit-cards/chase-sapphire-reserve-overhaul-june-2025"
+        },
+        {
+          "url": "https://www.nerdwallet.com/credit-cards/news/chase-sapphire-reserve-overhaul-june-2025"
+        }
+      ],
+      "verifiedAt": "2026-11-12",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Chase Travel flights and Chase Travel hotels and cars (8x)."
+    },
+    {
+      "slug": "chase_sapphire_reserve_business",
+      "issuer": "Chase",
+      "name": "Sapphire Reserve for Business",
+      "network": "visa",
+      "annualFee": 795,
+      "program": "chase_ur",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 8,
+          "channel": "portal",
+          "note": "Includes The Edit; FROSCH and Valerie Wilson Travel bookings excluded."
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 4,
+          "channel": "any"
+        },
+        {
+          "categories": ["hotels"],
+          "multiplier": 4,
+          "channel": "any"
+        },
+        {
+          "categories": ["advertising"],
+          "multiplier": 3,
+          "cap": {
+            "amount": 1000000,
+            "period": "cardmember_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Social media and search engine advertising only. The first anniversary year runs from November 15, 2026 to the next statement with an annual fee."
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2027-09-30"
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "Chase Sapphire Reserve for Business",
+        "Sapphire Reserve Business",
+        "CSR Business"
+      ],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/chase-sapphire-reserve-for-business-review/"
+        },
+        {
+          "url": "https://onemileatatime.com/go/cc-chase-csrbiz-review/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/chase-sapphire-reserve-for-business/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/chase-unveils-the-chase-sapphire-reserve-for-business/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/hyatt-transfer-changes-sapphire-reserve-or-sapphire-preferred/"
+        },
+        {
+          "url": "https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business"
+        },
+        {
+          "url": "https://www.thepointsguy.com/news/new-hyatt-explorist-sapphire-reserve-benefit"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/chase-sapphire-cardholders-spend-hyatt-explorist/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/sapphire-reserve-business-bigger-hotel-credit-bonus-category-cap/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Chase Travel flights and Chase Travel hotels and cars (8x). Changes announced for 2027-01-01 are not reflected yet. Employee cards are free but get no lounge access, credits or status. Points pool with other Ultimate Rewards cards and keep 1:1 transfers to World of Hyatt after the June 2026 change. Flex for Business lets part of the line be carried with interest."
+    },
+    {
+      "slug": "chase_southwest_priority",
+      "issuer": "Chase",
+      "name": "Southwest Rapid Rewards Priority Credit Card",
+      "network": "visa",
+      "annualFee": 229,
+      "program": "southwest_rr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["SOUTHWEST AIR", "SOUTHWES 526", "SOUTHWEST.COM"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Southwest purchases: flights, inflight, Southwest gift cards and Getaways packages. Southwest Cruises, Charters and Cargo excluded."
+        },
+        {
+          "categories": ["gas", "dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Gas stations and restaurants, no annual cap."
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 5,
+          "channel": "any",
+          "validTo": "2027-12-31",
+          "note": "5x total (4 bonus points on top of 1x) on qualifying Lyft purchases in the Lyft app through December 31, 2027."
+        }
+      ],
+      "business": false,
+      "aliases": ["Southwest Priority", "Chase Southwest Priority"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/southwest/priority"
+        },
+        {
+          "url": "https://media.chase.com/news/chase-southwest-introduce-new-card-benefits"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/changes-southwest-airlines-credit-cards-2025/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/southwest-airlines-credit-cards-new-benefits/"
+        },
+        {
+          "url": "https://awardwallet.com/news/southwest-rapid-rewards/southwest-card-lyft-bonus-points/"
+        },
+        {
+          "url": "https://thepointsguy.com/loyalty-programs/southwest-rapid-rewards-reboot-and-companion-pass-changes"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Southwest Companion Pass and tier qualifying points earned alongside the points (0.5 per dollar). Changes announced for 2027-01-01 are not reflected yet."
+    },
+    {
+      "slug": "chase_united_business",
+      "issuer": "Chase",
+      "name": "United Business Card",
+      "network": "visa",
+      "annualFee": 150,
+      "program": "united_mileageplus",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["UNITED AIRLINES", "UNITED AIR", "UNITED.COM", "UNITED 016"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "All purchases from United: tickets, Economy Plus, upgrades, inflight purchases, bag and other fees. Chase advertises 8x total on United flights from April 2026: 6x MileagePlus cardmember flight earn plus 2x card earn. Only the 2x is card earn."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Restaurants, including eligible delivery services."
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Gas stations."
+        },
+        {
+          "categories": ["office_supply"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Office supply stores."
+        },
+        {
+          "categories": ["transit", "rideshare"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Local transit and commuting, including rideshare, taxis, trains, tolls and mass transit. Parking is mapped with tolls but may not qualify."
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "United Business",
+        "Chase United Business",
+        "United Explorer Business",
+        "United MileagePlus Explorer Business"
+      ],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/business-credit-cards/united/united-business-card"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/chase/united-business-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/the-chase-united-business-card-review/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/chase-united-mileageplus-explorer-business-credit-card"
+        },
+        {
+          "url": "https://www.insideflyer.com/posts/united-cardholders-now-earn-more-miles-and-save-on-awards/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: United Premier qualifying points earned alongside the points (0.05 per dollar). Employee cards are free. Chase advertises 8x total on United flights, of which 6x is the MileagePlus cardmember flight earn and only 2x is card earn. Premier members flying on award tickets can get complimentary Premier upgrades per Chase's page, but reviews report the perk ended for the personal cards in 2025, so it is not modeled."
+    },
+    {
+      "slug": "chase_united_club",
+      "issuer": "Chase",
+      "name": "United Club Card",
+      "network": "visa",
+      "annualFee": 695,
+      "program": "united_mileageplus",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["UNITED AIRLINES", "UNITED AIR", "UNITED.COM", "UNITED 016"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Chase advertises 11x total on United flights: 6x MileagePlus cardmember flight earn plus 5x card earn. Only the 5x is card earn. Includes United Card Events."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Other travel: airfare, trains, transit, cruises, hotels, car rentals, taxis, resorts, rideshare, tolls."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Including eligible delivery services."
+        }
+      ],
+      "business": false,
+      "aliases": [
+        "United Club",
+        "United Club Infinite",
+        "United Club Infinite Card",
+        "Chase United Club",
+        "United MileagePlus Club"
+      ],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/united/united-club"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/chase/united-club-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/united-credit-card-refresh-2025"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/"
+        },
+        {
+          "url": "https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Not modeled: United Premier qualifying points earned alongside the points (0.0667 per dollar). Not modeled: Hotels (5x), which applies only to purchases made through renowned hotels chase travel. Formerly the United Club Infinite Card. Authorized users are free but get no United Club access. Chase's page still lists complimentary Premier upgrades on award tickets for Premier cardmembers, but reviews report the perk ended August 1, 2025, so it is not modeled. One Mile at a Time reports the spend PQP cap rising to 32,000 in 2027; not yet confirmed by Chase, so not modeled."
+    },
+    {
+      "slug": "chase_united_club_business",
+      "issuer": "Chase",
+      "name": "United Club Business Card",
+      "network": "visa",
+      "annualFee": 695,
+      "program": "united_mileageplus",
+      "fxFeePercent": 0,
+      "base": 1.5,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["UNITED AIRLINES", "UNITED AIR", "UNITED.COM", "UNITED 016"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "All purchases from United: tickets, Economy Plus, upgrades, inflight purchases, bag and other fees. Chase advertises 8x total on United flights: 6x MileagePlus cardmember flight earn plus 2x card earn. Only the 2x is card earn."
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "United Club Business",
+        "Chase United Club Business",
+        "United MileagePlus Club Business"
+      ],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/business-credit-cards/united/united-club-business"
+        },
+        {
+          "url": "https://www.chase.com/business/credit-cards/united-business-cards/united-club-card/travel-benefits"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/united-club-business-card-review"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/united-club-business-card"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/"
+        },
+        {
+          "url": "https://www.dansdeals.com/credit-cards/wow-united-massively-overhauls-credit-card-program-and-lounge-access-the-good-the-bad-and-the-ugly"
+        },
+        {
+          "url": "https://frequentmiler.com/?p=262194"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/chase-ua-club-business-credit-card/"
+        },
+        {
+          "url": "https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Not modeled: United Premier qualifying points earned alongside the points (0.0667 per dollar). Not modeled: Hotels (5x), which applies only to purchases made through renowned hotels chase travel. Employee cards are free but get no United Club membership of their own. Chase advertises 8x total on United flights, of which 6x is the MileagePlus cardmember flight earn and only 2x is card earn. Chase's page still lists complimentary Premier upgrades on award tickets for Premier cardmembers, but reviews report the perk ended for United cards on August 1, 2025, so it is not modeled. A Global Entry, TSA PreCheck or NEXUS credit appears in some reviews, but Chase said it was listed for this card by mistake and its product pages do not include it, so it is not modeled. Some reviews list price protection; Chase's benefit page does not, so it is not modeled."
+    },
+    {
+      "slug": "chase_united_explorer",
+      "issuer": "Chase",
+      "name": "United Explorer Card",
+      "network": "visa",
+      "annualFee": 150,
+      "program": "united_mileageplus",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["UNITED AIRLINES", "UNITED AIR", "UNITED.COM", "UNITED 016"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Chase advertises 9x total on United flights: 6x MileagePlus cardmember flight earn plus 3x card earn. Only the 3x is card earn."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Restaurants, including takeout and eligible delivery services."
+        },
+        {
+          "categories": ["hotels"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Hotel stays booked directly with the hotel. Chase's '5x on United Hotels' adds MileagePlus program miles on top of this 2x."
+        }
+      ],
+      "business": false,
+      "aliases": ["United Explorer", "Chase United Explorer", "United MileagePlus Explorer"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/united/united-explorer"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/united-credit-card-refresh-2025"
+        },
+        {
+          "url": "https://awardwallet.com/news/united-mileageplus/united-card-portfolio-overhaul/"
+        },
+        {
+          "url": "https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/united-chase-card-changes"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: United Premier qualifying points earned alongside the points (0.05 per dollar)."
+    },
+    {
+      "slug": "chase_united_quest",
+      "issuer": "Chase",
+      "name": "United Quest Card",
+      "network": "visa",
+      "annualFee": 350,
+      "program": "united_mileageplus",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["UNITED AIRLINES", "UNITED AIR", "UNITED.COM", "UNITED 016"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Chase advertises 10x total on United flights: 6x MileagePlus cardmember flight earn plus 4x card earn. Only the 4x is card earn. Includes United Card Events."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Other travel: airfare, trains, transit, cruises, hotels, car rentals, taxis, rideshare, tolls."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Including eligible delivery services."
+        },
+        {
+          "categories": ["streaming"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Select streaming services."
+        }
+      ],
+      "business": false,
+      "aliases": ["United Quest", "Chase United Quest"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/united/united-quest"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/united-credit-card-refresh-2025"
+        },
+        {
+          "url": "https://awardwallet.com/news/united-mileageplus/united-card-portfolio-overhaul/"
+        },
+        {
+          "url": "https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/united-chase-card-changes"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: United Premier qualifying points earned alongside the points (0.05 per dollar). Not modeled: Hotels (5x), which applies only to purchases made through renowned hotels chase travel."
+    },
+    {
+      "slug": "chase_world_of_hyatt",
+      "issuer": "Chase",
+      "name": "World of Hyatt Credit Card",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "world_of_hyatt",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": ["HYATT", "ANDAZ", "ALILA", "THOMPSON HOTEL", "MIRAVAL"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Card bonus points at participating Hyatt hotels; members also earn up to 5 base points from World of Hyatt."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any"
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Airline tickets purchased directly from the airline."
+        },
+        {
+          "categories": ["transit"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Local transit and commuting, including rideshare per Chase definitions."
+        },
+        {
+          "categories": ["fitness"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Fitness club and gym memberships."
+        }
+      ],
+      "business": false,
+      "aliases": ["Hyatt card", "Chase World of Hyatt"],
+      "sources": [
+        {
+          "url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card"
+        }
+      ],
+      "verifiedAt": "2026-11-21",
+      "notes": "Not modeled: World of Hyatt qualifying night credits earned alongside the points (0.0004 per dollar)."
+    }
+  ]
+}

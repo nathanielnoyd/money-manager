@@ -1,0 +1,55 @@
+{
+  "cards": [
+    {
+      "slug": "discover_it_cash_back",
+      "issuer": "Discover",
+      "name": "Discover it Cash Back",
+      "network": "discover",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "multiplier": 5,
+          "cap": {
+            "amount": 1500,
+            "period": "quarter"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "rotating": true,
+          "note": "Activate each quarter; earns 5% only from the activation date (not retroactive). Up to $1,500 of category purchases a quarter ($75 back), then 1%. Purchases through digital wallets or third-party payment accounts may not qualify. Requires enrollment or activation."
+        }
+      ],
+      "rotating": {
+        "2026-Q1": ["groceries", "wholesale_clubs", "streaming"],
+        "2026-Q2": ["dining", "home_improvement"],
+        "2026-Q3": ["ev_charging", "gas", "airfare", "transit", "drugstores"],
+        "2026-Q4": ["dining", "entertainment", "utilities"]
+      },
+      "business": false,
+      "aliases": ["Discover it", "Discover it Cash Back Card"],
+      "sources": [
+        {
+          "url": "https://www.discover.com/credit-cards/cash-back/it-card.html"
+        },
+        {
+          "url": "https://www.discover.com/credit-cards/cashback-bonus/cashback-calendar.html"
+        },
+        {
+          "url": "https://awardwallet.com/news/cash-back/discover-cashback-calendar/"
+        },
+        {
+          "url": "https://doctorofcredit.com/discover-q2-2026-5-categories-gas-ev-transit-flights-drugstores"
+        },
+        {
+          "url": "https://www.nerdwallet.com/credit-cards/news/discover-bonus-categories-q4-2026"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Discover is now part of Capital One. A September 2026 report says this card will move to a different payment network in the coming months without naming it; not modeled until confirmed."
+    }
+  ]
+}

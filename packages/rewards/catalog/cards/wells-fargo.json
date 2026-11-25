@@ -1,0 +1,140 @@
+{
+  "cards": [
+    {
+      "slug": "wells_fargo_active_cash",
+      "issuer": "Wells Fargo",
+      "name": "Wells Fargo Active Cash Card",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "wells_fargo_rewards",
+      "fxFeePercent": 3,
+      "base": 2,
+      "earn": [],
+      "business": false,
+      "aliases": ["Active Cash", "Wells Fargo Active Cash Visa Signature"],
+      "sources": [
+        {
+          "url": "https://creditcards.wellsfargo.com/active-cash-credit-card/"
+        },
+        {
+          "url": "https://www.creditcards.com/reviews/wells-fargo-active-cash-card-review/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Visa Signature. Earns Wells Fargo Rewards cash rewards (one point is one cent). 3% foreign transaction fee."
+    },
+    {
+      "slug": "wells_fargo_autograph",
+      "issuer": "Wells Fargo",
+      "name": "Wells Fargo Autograph Card",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "wells_fargo_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Eating places, restaurants, drinking places, fast food and caterers."
+        },
+        {
+          "categories": ["airfare", "hotels", "car_rental", "travel"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Airlines, hotels and motels, timeshares, car rental, cruise lines, travel agencies, discount travel sites and campgrounds. Vacation rentals count only when they code as timeshares or travel agencies."
+        },
+        {
+          "categories": [],
+          "merchants": ["AIRBNB", "VRBO", "HOMEAWAY", "PLUM GUIDE", "VACASA"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Airlines, hotels and motels, timeshares, car rental, cruise lines, travel agencies, discount travel sites and campgrounds. Vacation rentals count only when they code as timeshares or travel agencies."
+        },
+        {
+          "categories": ["ev_charging", "gas", "transit", "rideshare"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Gas stations, automated fuel dispensers and EV charging; passenger rail, taxis, limousines, ferries, tolls, and parking lots and garages."
+        },
+        {
+          "categories": ["streaming"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Cable and other pay TV, digital goods, books, movies, music and subscription services, per the issuer's list at wellsfargo.com/autographstreaming."
+        },
+        {
+          "categories": ["phone_internet"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Landline and cell phone providers coded as telecommunication services."
+        }
+      ],
+      "business": false,
+      "aliases": ["Autograph", "Wells Fargo Autograph Visa Signature"],
+      "sources": [
+        {
+          "url": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-21",
+      "notes": "Visa Signature. Points transfer to Wells Fargo Rewards travel partners."
+    },
+    {
+      "slug": "wells_fargo_autograph_journey",
+      "issuer": "Wells Fargo",
+      "name": "Wells Fargo Autograph Journey Card",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "wells_fargo_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Merchants classified as hotels and motels, booked directly or through an agency."
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Merchants classified as airlines and air carriers."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Eating places, restaurants, drinking places, fast food and caterers."
+        },
+        {
+          "categories": ["car_rental", "travel"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Timeshares, car rental, cruise lines, travel agencies, discount travel sites and campgrounds. Transit, rideshare, parking and tolls are not in the issuer's definition and earn 1x."
+        },
+        {
+          "categories": [],
+          "merchants": ["AIRBNB", "VRBO", "HOMEAWAY", "PLUM GUIDE", "VACASA"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Timeshares, car rental, cruise lines, travel agencies, discount travel sites and campgrounds. Transit, rideshare, parking and tolls are not in the issuer's definition and earn 1x."
+        }
+      ],
+      "business": false,
+      "aliases": ["Autograph Journey", "Wells Fargo Autograph Journey Visa Signature"],
+      "sources": [
+        {
+          "url": "https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/wells-fargo-autograph-journey-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Visa Signature. Points transfer to Wells Fargo Rewards travel partners."
+    }
+  ]
+}

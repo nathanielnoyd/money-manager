@@ -1,0 +1,55 @@
+{
+  "cards": [
+    {
+      "slug": "apple_card",
+      "issuer": "Apple",
+      "name": "Apple Card",
+      "network": "mastercard",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "merchants": ["APPLE.COM", "APPLE STORE", "APPLE ONLINE STORE", "ITUNES.COM"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Apple Store, apple.com, the App Store, iTunes and Apple services, with the physical card, virtual number or Apple Pay."
+        },
+        {
+          "categories": [],
+          "merchants": [
+            "ACE HARDWARE",
+            "BOOKING.COM",
+            "CHARGEPOINT",
+            "DUANE READE",
+            "EXXON",
+            "MOBIL ",
+            "HERTZ",
+            "NIKE",
+            "UBER EATS",
+            "UBEREATS",
+            "WALGREENS",
+            "UBER"
+          ],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Apple Pay purchases at Ace Hardware, Booking.com, ChargePoint, Duane Reade, Exxon Mobil, Hertz, Nike, Uber, Uber Eats and Walgreens. Booking.com: only prepaid stays and car rentals booked through Apple's link (no flights, cruises or pay-at-property). Hertz: only U.S."
+        }
+      ],
+      "business": false,
+      "aliases": ["Apple Titanium Card"],
+      "sources": [
+        {
+          "url": "https://www.apple.com/apple-card/"
+        },
+        {
+          "url": "https://www.jpmorganchase.com/newsroom/press-releases/2026/chase-to-become-new-issuer-of-apple-card"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: 2x on purchases paid with apple pay, since the app can't tell how a purchase was paid. Issued by Goldman Sachs Bank USA on Mastercard. On January 7, 2026, JPMorgan Chase announced it will become the issuer in about 24 months, subject to regulatory approval; Mastercard stays the network and the announcement promises no change to Daily Cash. No effective date or term changes are known, so the issuer move is not modeled as a release. No annual, foreign transaction, late or over-the-limit fees. Apple Card Family lets co-owners and participants share an account at no cost. Apple Card Monthly Installments offer 0% APR on eligible Apple purchases. Daily Cash pays out daily to Apple Cash or Apple Savings."
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "cards": [
+    {
+      "slug": "barclays_wyndham_earner_business",
+      "issuer": "Barclays US",
+      "name": "Wyndham Rewards Earner Business Card",
+      "network": "visa",
+      "annualFee": 149,
+      "program": "wyndham_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "WYNDHAM",
+            "LA QUINTA",
+            "RAMADA",
+            "DAYS INN",
+            "SUPER 8",
+            "MICROTEL",
+            "BAYMONT",
+            "WINGATE",
+            "HOWARD JOHNSON",
+            "TRAVELODGE"
+          ],
+          "multiplier": 8,
+          "channel": "any",
+          "note": "Eligible net purchases at participating Hotels by Wyndham (including Wyndham Travel Bundles); the current terms add Caesars Rewards and Trademark Collection lodging and Trademark Collection vacation club resorts, and exclude Echo Suites, WaterWalk unfurnished suites and non-participating hotels."
+        },
+        {
+          "categories": ["gas", "ev_charging", "advertising", "office_supply", "shipping"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Gas, EV charging, marketing, advertising, shipping and office supply stores by merchant code. Club Wyndham, WorldMark, Margaritaville and Shell vacation club resorts outside the Trademark Collection, their maintenance fees and timeshare loan payments to Wyndham developers also earn 5x but have no s…"
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "Wyndham Earner Business",
+        "Wyndham Business Card",
+        "Barclays Wyndham Earner Business"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wyndhamrewardscreditcard.com/earner-business-card/"
+        },
+        {
+          "url": "https://www.barclaycardus.com/applycontent/TnCs.jsp?tc48504"
+        },
+        {
+          "url": "https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite"
+        },
+        {
+          "url": "https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/barclays-refreshes-wyndham-personal-business-cards-increased-fees-added-credits-changed-points-earning/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/wyndham-earner-business-card-review"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/barclays-wyndham-earner-business-credit-card"
+        },
+        {
+          "url": "https://frequentmiler.com/new-wyndham-earner-credit-cards-review-surprisingly-strong/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Terms for new applicants changed on June 17, 2026; cardmembers approved before then keep the pre-refresh terms ($95 fee, 8x gas, 5x utilities, 10% award discount) until Barclays offers a product change. Employee cards are free. Points Payback (points for a statement credit on purchases from the last 90 days) and a 15% discount on buying Wyndham points with the card are not modeled."
+    },
+    {
+      "slug": "barclays_wyndham_earner_plus",
+      "issuer": "Barclays US",
+      "name": "Wyndham Rewards Earner Plus Card",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "wyndham_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "WYNDHAM",
+            "LA QUINTA",
+            "RAMADA",
+            "DAYS INN",
+            "SUPER 8",
+            "MICROTEL",
+            "BAYMONT",
+            "WINGATE",
+            "HOWARD JOHNSON",
+            "TRAVELODGE"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Eligible folio charges at participating Hotels by Wyndham (including Wyndham Travel Bundles), Caesars Rewards and Trademark Collection lodging and Trademark Collection vacation club resorts. Echo Suites, WaterWalk unfurnished suites and non-participating hotels are excluded."
+        },
+        {
+          "categories": ["airfare", "car_rental", "rideshare", "gas", "ev_charging", "transit"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Issuer travel definition: airfare, car rental, rideshare, gas, EV charging, tolls and trains, by merchant code. Parking shares the tolls category here but may not qualify; Vacation Club resorts outside the Trademark Collection, their maintenance fees and timeshare loan payments to Wyndham developer…"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 4,
+          "channel": "any"
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Grocery stores by merchant code; Target, Walmart, warehouse clubs, drug stores and discount stores are excluded."
+        }
+      ],
+      "business": false,
+      "aliases": ["Wyndham Earner Plus", "Wyndham Earner+", "Barclays Wyndham Earner Plus"],
+      "sources": [
+        {
+          "url": "https://www.wyndhamrewardscreditcard.com/earner-plus/"
+        },
+        {
+          "url": "https://www.barclaycardus.com/applycontent/TnCs.jsp?tc49153"
+        },
+        {
+          "url": "https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite"
+        },
+        {
+          "url": "https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/barclays-refreshes-wyndham-personal-business-cards-increased-fees-added-credits-changed-points-earning/"
+        }
+      ],
+      "verifiedAt": "2026-11-14"
+    },
+    {
+      "slug": "barclays_wyndham_earner_premier",
+      "issuer": "Barclays US",
+      "name": "Wyndham Rewards Earner Premier Card",
+      "network": "visa",
+      "annualFee": 395,
+      "program": "wyndham_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "WYNDHAM",
+            "LA QUINTA",
+            "RAMADA",
+            "DAYS INN",
+            "SUPER 8",
+            "MICROTEL",
+            "BAYMONT",
+            "WINGATE",
+            "HOWARD JOHNSON",
+            "TRAVELODGE"
+          ],
+          "multiplier": 8,
+          "channel": "any",
+          "note": "Eligible folio charges at participating Hotels by Wyndham (including Wyndham Travel Bundles), Caesars Rewards and Trademark Collection lodging and Trademark Collection vacation club resorts. Echo Suites, WaterWalk unfurnished suites and non-participating hotels are excluded."
+        },
+        {
+          "categories": ["airfare", "car_rental", "rideshare", "gas", "ev_charging", "transit"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Issuer travel definition: airfare, car rental, rideshare, gas, EV charging, tolls and trains, by merchant code. Parking shares the tolls category here but may not qualify; Vacation Club resorts outside the Trademark Collection, their maintenance fees and timeshare loan payments to Wyndham developer…"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 4,
+          "channel": "any"
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Grocery stores by merchant code; Target, Walmart, warehouse clubs, drug stores and discount stores are excluded."
+        }
+      ],
+      "business": false,
+      "aliases": ["Wyndham Earner Premier", "Barclays Wyndham Earner Premier"],
+      "sources": [
+        {
+          "url": "https://www.wyndhamrewardscreditcard.com/earner-premier-card/"
+        },
+        {
+          "url": "https://www.barclaycardus.com/applycontent/TnCs.jsp?tc49152"
+        },
+        {
+          "url": "https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite"
+        },
+        {
+          "url": "https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/barclays-wyndham-earner-premier-credit-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-14"
+    }
+  ]
+}

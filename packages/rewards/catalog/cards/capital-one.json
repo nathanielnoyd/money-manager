@@ -1,0 +1,245 @@
+{
+  "cards": [
+    {
+      "slug": "capital_one_quicksilver",
+      "issuer": "Capital One",
+      "name": "Capital One Quicksilver Cash Rewards",
+      "network": "mastercard",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 0,
+      "base": 1.5,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Hotels, vacation rentals and rental cars booked through Capital One Travel."
+        }
+      ],
+      "business": false,
+      "aliases": ["Quicksilver"],
+      "sources": [
+        {
+          "url": "https://www.capitalone.com/credit-cards/quicksilver/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/capital-one-best-welcome-offers"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Capital One Entertainment purchases (5x): purchases through Capital One Entertainment. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Capital One Travel hotels and Capital One Travel vacation rentals and Capital One Travel car rentals (5x). Authorized users are free. Rewards can be moved to Capital One miles when the holder also has a miles card such as Venture X."
+    },
+    {
+      "slug": "capital_one_savor",
+      "issuer": "Capital One",
+      "name": "Capital One Savor Cash Rewards",
+      "network": "mastercard",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Hotels, vacation rentals and rental cars booked through Capital One Travel."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Restaurants, cafes, bars, lounges, fast food and bakeries; some hotel restaurants, food counters and food trucks may not code as dining."
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Grocery stores; superstores such as Walmart and Target are excluded, and wholesale clubs are not grocery stores."
+        },
+        {
+          "categories": ["entertainment"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Excludes golf courses, collegiate sporting events, cable, digital streaming and membership services."
+        },
+        {
+          "categories": ["streaming"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Popular streaming services only, per Capital One’s merchant list."
+        }
+      ],
+      "business": false,
+      "aliases": ["Savor", "SavorOne", "Capital One SavorOne"],
+      "sources": [
+        {
+          "url": "https://www.capitalone.com/credit-cards/savor/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/capital-one-best-welcome-offers"
+        },
+        {
+          "url": "https://onemileatatime.com/news/capital-one-savorone-rebrands-savor/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Capital One Entertainment purchases (8x): purchases through Capital One Entertainment. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Capital One Travel hotels and Capital One Travel vacation rentals and Capital One Travel car rentals (5x). The $0 card formerly named SavorOne. The $95 Savor (4% dining and entertainment) closed to applicants in July 2024 and is not this product; in 2025 Capital One reused the SavorOne name for a separate $39 card for fair credit. Rewards can be moved to Capital One miles when the holder also has a miles card such as Venture X."
+    },
+    {
+      "slug": "capital_one_spark_cash_plus",
+      "issuer": "Capital One",
+      "name": "Capital One Spark Cash Plus",
+      "network": "other",
+      "annualFee": 150,
+      "program": "cash_back",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Hotels, vacation rentals and rental cars booked through Capital One Business Travel; flights earn the base 2%."
+        }
+      ],
+      "business": true,
+      "aliases": ["Spark Cash Plus", "Spark Cash Plus for Business"],
+      "sources": [
+        {
+          "url": "https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/capital-one/capital-one-spark-cash-plus/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The network depends on the card issued (OCCB lists it as other). The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Capital One Travel hotels and Capital One Travel vacation rentals and Capital One Travel car rentals (5x). Charge-style card with no preset spending limit, designed to be paid in full (part of the balance may be carried with interest). Capital One issues it on Visa or Mastercard and the network is not chosen by the applicant, so `network` is other. Cash back redeems as a statement credit or check and does not expire while the account is open."
+    },
+    {
+      "slug": "capital_one_venture",
+      "issuer": "Capital One",
+      "name": "Capital One Venture Rewards",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "capital_one_miles",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Hotels, vacation rentals and rental cars booked through Capital One Travel. Flights booked there earn the base 2x."
+        }
+      ],
+      "business": false,
+      "aliases": ["Venture", "Venture Rewards"],
+      "sources": [
+        {
+          "url": "https://www.capitalone.com/credit-cards/venture/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/capital-one-best-welcome-offers"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/capital-one-removes-lounge-passes-venture-spark-miles-for-business/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Capital One Entertainment purchases (5x): purchases through Capital One Entertainment. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Capital One Travel hotels and Capital One Travel vacation rentals and Capital One Travel car rentals (5x). Authorized users are free. Cardholders pay $45 per visit at Capital One Lounges."
+    },
+    {
+      "slug": "capital_one_venture_x",
+      "issuer": "Capital One",
+      "name": "Capital One Venture X Rewards",
+      "network": "visa",
+      "annualFee": 395,
+      "program": "capital_one_miles",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 10,
+          "channel": "portal"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal"
+        }
+      ],
+      "business": false,
+      "aliases": ["Venture X"],
+      "sources": [
+        {
+          "url": "https://www.capitalone.com/credit-cards/venture-x/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/capital-one/capital-one-venture-x-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/capital-one-venture-x-losing-plaza-premium-lounge-access/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/capital-one-venture-x/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/capital-one-venture-x-lounge-access-changes/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/capital-one-venture-x"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Capital One Entertainment purchases (5x): purchases through Capital One Entertainment. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Capital One Travel hotels and Capital One Travel car rentals (10x); Capital One Travel flights and Capital One Travel vacation rentals (5x). Authorized user cards are free; lounge access for an authorized user costs $125 a year each, up to four."
+    },
+    {
+      "slug": "capital_one_venture_x_business",
+      "issuer": "Capital One",
+      "name": "Capital One Venture X Business",
+      "network": "visa",
+      "annualFee": 395,
+      "program": "capital_one_miles",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 10,
+          "channel": "portal",
+          "note": "Booked through Capital One Business Travel."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Flights and vacation rentals booked through Capital One Business Travel."
+        }
+      ],
+      "business": true,
+      "aliases": ["Venture X Business", "VXB"],
+      "sources": [
+        {
+          "url": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/"
+        },
+        {
+          "url": "https://frequentmiler.com/capital-one-venture-x-business-credit-card-review/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/capital-one-venture-x-business-credit-card"
+        },
+        {
+          "url": "https://frequentmiler.com/negative-venture-x-venture-x-business-lounge-access-changes-for-additional-cardholders-primary-cardholder-guests"
+        },
+        {
+          "url": "https://onemileatatime.com/news/capital-one-venture-x-lounge-access-changes/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Capital One Travel hotels and Capital One Travel car rentals (10x); Capital One Travel flights and Capital One Travel vacation rentals (5x). Pay-in-full card with no preset spending limit (balance may be partly carried with interest). Employee cards are free; since February 1, 2026 the primary can buy lounge access for up to four employee cards at $125 a year each."
+    }
+  ]
+}

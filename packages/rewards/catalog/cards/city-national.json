@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "slug": "cnb_crystal_visa_infinite",
+      "issuer": "City National Bank",
+      "name": "City National Crystal Visa Infinite Credit Card",
+      "network": "visa",
+      "annualFee": 400,
+      "program": "cnb_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare", "hotels", "car_rental", "rideshare", "transit", "dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Merchants coded by Visa as airlines, hotels, taxis and limousines (including Uber and Lyft), rental cars, trains, buses, restaurants, and fast food and takeout. Superstores, warehouse clubs and discount stores earn 1x, as do online and catalog purchases unless the merchant codes them correctly."
+        }
+      ],
+      "business": false,
+      "aliases": ["CNB Crystal", "Crystal Visa Infinite", "City National Crystal"],
+      "sources": [
+        {
+          "url": "https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp"
+        },
+        {
+          "url": "https://www.cnb.com/content/dam/cnb/personal-banking/lending/credit-cards/documents/Rewards-Program-Rules-Householding-08119.pdf"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/cnb-city-national-bank-crystal-visa-infinite-credit-card/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/rumor-city-national-bank-to-change-250-airline-credit-per-user-to-350-across-all-cards"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Authorized (additional) cards cost $95 each a year since 2020. Older reviews mention 12 Gogo in-flight internet passes a year per card, but the issuer page no longer lists them and no current source confirms them, so they are not modeled. Other issuer-listed perks not modeled: Crystal Card Concierge, Troon Rewards and Troon Prive golf benefits, preferred seating at Beacon Theatre events, and car rental privileges with Avis, Hertz, National and Audi on demand."
+    }
+  ]
+}

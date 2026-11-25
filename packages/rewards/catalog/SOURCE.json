@@ -1,0 +1,14 @@
+{
+  "dataset": "Open Credit Card Benefits",
+  "url": "https://github.com/nathanielnoyd/open-credit-card-benefits",
+  "license": "CC BY 4.0",
+  "attribution": "Open Credit Card Benefits contributors",
+  "commit": "1ed46aef433bedab8b063b91fce366c605dd8241",
+  "asOf": "2026-11-21",
+  "valuations": "examples/value-sets/valuations.yaml",
+  "counts": {
+    "cards": 80,
+    "programs": 20,
+    "issuers": 12
+  }
+}

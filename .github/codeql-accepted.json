@@ -1,0 +1,7 @@
+[
+  {
+    "ruleId": "js/file-access-to-http",
+    "path": "packages/connectors/src/plaid.ts",
+    "reason": "By design: the worker reads the Plaid client secret from a Docker secret file and sends it to Plaid's fixed API host (sandbox.plaid.com or production.plaid.com) over HTTPS with redirects refused."
+  }
+]

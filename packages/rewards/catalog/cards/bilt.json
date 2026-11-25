@@ -1,0 +1,203 @@
+{
+  "cards": [
+    {
+      "slug": "bilt_blue",
+      "issuer": "Bilt",
+      "name": "Bilt Blue Card",
+      "network": "mastercard",
+      "annualFee": 0,
+      "program": "bilt",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 3,
+          "channel": "portal",
+          "note": "Hotels booked through the Bilt Travel portal, per the card page; the terms describe it as a Bilt Travel partner bonus on top of the card rate."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 2,
+          "channel": "portal",
+          "note": "Flights booked through the Bilt Travel portal, per the card page."
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Lyft rides after linking accounts; rate from the card page FAQ. Bilt Neighborhood Dining restaurants earn a variable bonus (\"up to\") that is not modeled. Requires enrollment or activation."
+        },
+        {
+          "categories": ["rent"],
+          "multiplier": 1.25,
+          "channel": "any",
+          "note": "Housing-only option: 1.25x on rent and mortgage paid through Bilt when everyday spend in the billing cycle is at least 100% of the housing payment. Below 25% the cycle earns a flat 250 points. No annual cap."
+        }
+      ],
+      "business": false,
+      "aliases": ["Bilt Blue", "Bilt Card 2.0 Blue"],
+      "sources": [
+        {
+          "url": "https://www.bilt.com/card/blue"
+        },
+        {
+          "url": "https://www.bilt.com/terms/bilt-card-offer-terms"
+        },
+        {
+          "url": "https://www.bilt.com/card"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/new-bilt-cards-2-0"
+        },
+        {
+          "url": "https://onemileatatime.com/news/bilt-cardless-credit-cards/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Bilt Cash earned alongside the points (4 per dollar, 4% Bilt Cash on everyday spend). The rent rate is 0.5x, 0.75x, 1x, 1.25x depending on the cardholder's rewards option and everyday spend ratio tier; the highest is shown. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Bilt Travel hotels (3x); Bilt Travel flights (2x). Not modeled, for lack of a matching category: Mortgage payments. Changes announced for 2027-01-01 are not reflected yet. Issued by Column N.A. and serviced by Cardless; launched 2026-02-07 to replace the Wells Fargo-issued Bilt Mastercard."
+    },
+    {
+      "slug": "bilt_obsidian",
+      "issuer": "Bilt",
+      "name": "Bilt Obsidian Card",
+      "network": "mastercard",
+      "annualFee": 95,
+      "program": "bilt",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 4,
+          "channel": "portal",
+          "note": "Hotels booked through the Bilt Travel portal, per the card page; the terms describe it as a Bilt Travel partner bonus on top of the card rate."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 3,
+          "channel": "portal",
+          "note": "Flights booked through the Bilt Travel portal, per the card page."
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Lyft rides after linking accounts; rate from the card page FAQ. Bilt Neighborhood Dining restaurants earn a variable bonus (\"up to\") that is not modeled. Requires enrollment or activation."
+        },
+        {
+          "categories": ["rent"],
+          "multiplier": 1.25,
+          "channel": "any",
+          "note": "Housing-only option: 1.25x on rent and mortgage paid through Bilt when everyday spend in the billing cycle is at least 100% of the housing payment. Below 25% the cycle earns a flat 250 points. No annual cap."
+        },
+        {
+          "categories": [],
+          "multiplier": 3,
+          "channel": "any",
+          "pick": {
+            "mode": "user_choice",
+            "eligible": ["dining"]
+          },
+          "note": "3x on dining when dining is the selected bonus category (the default). Restaurants, bars, bakeries and fast food by Mastercard MCC. Uncapped."
+        },
+        {
+          "categories": [],
+          "multiplier": 3,
+          "cap": {
+            "amount": 25000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "pick": {
+            "mode": "user_choice",
+            "eligible": ["groceries"]
+          },
+          "note": "3x at grocery stores and supermarkets when grocery is the selected bonus category, on up to $25,000 a calendar year, then 1x."
+        },
+        {
+          "categories": ["airfare", "hotels", "travel", "car_rental"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Purchases made directly with airlines, hotels, cruise lines and car rental agencies by Mastercard MCC; other travel earns 1x."
+        }
+      ],
+      "business": false,
+      "aliases": ["Bilt Obsidian", "Bilt Card 2.0 Obsidian"],
+      "sources": [
+        {
+          "url": "https://www.bilt.com/card/obsidian"
+        },
+        {
+          "url": "https://www.bilt.com/terms/bilt-card-offer-terms"
+        },
+        {
+          "url": "https://www.bilt.com/card"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/new-bilt-cards-2-0"
+        },
+        {
+          "url": "https://onemileatatime.com/news/bilt-cardless-credit-cards/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Bilt Cash earned alongside the points (4 per dollar, 4% Bilt Cash on everyday spend). The rent rate is 0.5x, 0.75x, 1x, 1.25x depending on the cardholder's rewards option and everyday spend ratio tier; the highest is shown. Dining (3x) or groceries (3x): earns only on the one the cardholder picks (bonus category); record it on the wallet card. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Bilt Travel hotels (4x); Bilt Travel flights (3x). Approximated: the 2x rate on cruises counts for all other travel. Not modeled, for lack of a matching category: Mortgage payments. Changes announced for 2027-01-01 are not reflected yet. Issued by Column N.A. and serviced by Cardless; launched 2026-02-07 to replace the Wells Fargo-issued Bilt Mastercard."
+    },
+    {
+      "slug": "bilt_palladium",
+      "issuer": "Bilt",
+      "name": "Bilt Palladium Card",
+      "network": "mastercard",
+      "annualFee": 495,
+      "program": "bilt",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 4,
+          "channel": "portal",
+          "note": "Hotels booked through the Bilt Travel portal, per the card page; the terms describe it as a Bilt Travel partner bonus on top of the card rate."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 3,
+          "channel": "portal",
+          "note": "Flights booked through the Bilt Travel portal, per the card page."
+        },
+        {
+          "categories": ["rideshare"],
+          "merchants": ["LYFT"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Lyft rides after linking accounts; rate from the card page FAQ. Bilt Neighborhood Dining restaurants earn a variable bonus (\"up to\") that is not modeled. Requires enrollment or activation."
+        }
+      ],
+      "business": false,
+      "aliases": ["Bilt Palladium", "Bilt Card 2.0 Palladium"],
+      "sources": [
+        {
+          "url": "https://www.bilt.com/card/palladium"
+        },
+        {
+          "url": "https://www.bilt.com/terms/bilt-card-offer-terms"
+        },
+        {
+          "url": "https://www.bilt.com/card"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/new-bilt-cards-2-0"
+        },
+        {
+          "url": "https://onemileatatime.com/news/bilt-cardless-credit-cards/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Bilt Cash earned alongside the points (4 per dollar, 4% Bilt Cash on everyday spend). The rent rate is 0.5x, 0.75x, 1x, 1.25x depending on the cardholder's rewards option and everyday spend ratio tier; the highest is shown. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Bilt Travel hotels (4x); Bilt Travel flights (3x). Not modeled, for lack of a matching category: Mortgage payments. Changes announced for 2027-01-01 are not reflected yet. Issued by Column N.A. and serviced by Cardless; launched 2026-02-07 to replace the Wells Fargo-issued Bilt Mastercard."
+    }
+  ]
+}

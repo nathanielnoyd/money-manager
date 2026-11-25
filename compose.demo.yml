@@ -1,0 +1,96 @@
+# Public, read-only demo with generated data. Use a SEPARATE machine/database from any
+# real instance: the worker refuses to run demo mode on a database with real households.
+#
+#   pnpm keys:generate --out secrets-demo
+#   docker compose -f compose.demo.yml --env-file .env.demo up -d --build
+#
+# .env.demo needs APP_URL (the public https URL). Put a TLS-terminating proxy or a public
+# Cloudflare Tunnel hostname (no Access policy) in front of 127.0.0.1:3000.
+
+name: money-manager-demo
+
+x-hardening: &hardening
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  restart: unless-stopped
+
+x-app-env: &app-env
+  DATABASE_HOST: db
+  DATABASE_NAME: money_manager
+  APP_DB_PASSWORD_FILE: /run/secrets/app_db_password
+  DEMO_MODE: "1"
+
+services:
+  db:
+    image: postgres:18-alpine@sha256:9ba53c7d41ea093baf5c1ba635ba5434c4f979880527d49bb7d9237d3193085b
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mm_admin
+      POSTGRES_DB: money_manager
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_admin_password
+    secrets: [postgres_admin_password]
+    volumes: [demo-pgdata:/var/lib/postgresql]
+    networks: [internal]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mm_admin -d money_manager"]
+      interval: 5s
+      retries: 30
+
+  migrate:
+    <<: *hardening
+    image: ${MM_IMAGE_PREFIX:-money-manager}-worker:${MM_VERSION:-local}
+    build: { context: ., dockerfile: docker/Dockerfile, target: worker }
+    command: ["node", "dist/migrate.mjs"]
+    restart: "no"
+    environment:
+      <<: *app-env
+      POSTGRES_ADMIN_PASSWORD_FILE: /run/secrets/postgres_admin_password
+    secrets: [postgres_admin_password, app_db_password]
+    networks: [internal]
+    depends_on: { db: { condition: service_healthy } }
+
+  web:
+    <<: *hardening
+    image: ${MM_IMAGE_PREFIX:-money-manager}-web:${MM_VERSION:-local}
+    build: { context: ., dockerfile: docker/Dockerfile, target: web }
+    environment:
+      <<: *app-env
+      APP_URL: ${APP_URL:?Set APP_URL to the demo's public https URL}
+      # A demo is public by design: no Tailscale/Cloudflare Access gate.
+      ACCESS_MODE: none
+      ALLOW_NO_ACCESS_GATE: "1"
+      SOURCE_URL: ${SOURCE_URL:-}
+      AUTH_ENCRYPTION_KEY_FILE: /run/secrets/auth_encryption_key
+      WORKER_PUBLIC_KEY_FILE: /run/secrets/worker_public_key
+    secrets: [app_db_password, auth_encryption_key, worker_public_key]
+    tmpfs: [/tmp, "/app/apps/web/.next/cache:uid=1000,gid=1000"]
+    ports: ["127.0.0.1:3000:3000"]
+    networks: [internal, edge]
+    depends_on: { migrate: { condition: service_completed_successfully } }
+
+  worker:
+    <<: *hardening
+    image: ${MM_IMAGE_PREFIX:-money-manager}-worker:${MM_VERSION:-local}
+    environment:
+      <<: *app-env
+      WORKER_KEYS_FILE: /run/secrets/worker_keys
+      DEMO_RESET_CRON: ${DEMO_RESET_CRON:-0 4 * * *}
+    secrets: [app_db_password, worker_keys]
+    tmpfs: [/tmp]
+    networks: [internal]
+    depends_on: { migrate: { condition: service_completed_successfully } }
+
+networks:
+  internal: { internal: true }
+  edge: {}
+
+volumes:
+  demo-pgdata:
+
+secrets:
+  postgres_admin_password: { file: ./secrets-demo/postgres_admin_password }
+  app_db_password: { file: ./secrets-demo/app_db_password }
+  auth_encryption_key: { file: ./secrets-demo/auth_encryption_key }
+  worker_public_key: { file: ./secrets-demo/worker_public_key }
+  worker_keys: { file: ./secrets-demo/worker_keys }

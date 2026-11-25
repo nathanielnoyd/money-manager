@@ -1,0 +1,304 @@
+{
+  "programs": [
+    {
+      "slug": "aa_aadvantage",
+      "name": "American Airlines AAdvantage",
+      "kind": "airline",
+      "unit": "miles",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 1.45,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "amex_mr",
+      "name": "American Express Membership Rewards",
+      "kind": "transferable",
+      "unit": "points",
+      "floorCpp": 1,
+      "floorNote": "Flights booked through Amex Travel. Card-level rebates (e.g. Business Platinum's 35% back) are benefits, not modeled here: 1¢ a point (portal), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 2,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "atmos_rewards",
+      "name": "Atmos Rewards (Alaska and Hawaiian)",
+      "kind": "airline",
+      "unit": "points",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 1.6,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "bilt",
+      "name": "Bilt Points",
+      "kind": "transferable",
+      "unit": "points",
+      "floorCpp": 1.25,
+      "floorNote": "Flights, hotels, cars and activities through Bilt Travel (Blade flights 0.7¢): 1.25¢ a point (portal), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 2.2,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "bofa_points",
+      "name": "Bank of America Points",
+      "kind": "cash_back",
+      "unit": "points",
+      "floorCpp": 1,
+      "floorNote": "Statement credit against travel and dining purchases (Travel Rewards), or any purchase on Premium Rewards cards: 1¢ a point (statement credit), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 1,
+      "valuation": {
+        "source": "bankofamerica.com (OCCB value set)",
+        "url": "https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "capital_one_miles",
+      "name": "Capital One Miles",
+      "kind": "transferable",
+      "unit": "miles",
+      "floorCpp": 1,
+      "floorNote": "Purchase Eraser, against travel purchases charged in the last 90 days: 1¢ a point (statement credit), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 1.85,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "cash_back",
+      "name": "Cash back",
+      "kind": "cash_back",
+      "unit": "cash",
+      "floorCpp": 1,
+      "floorNote": "1 point = 1 cent, as a statement credit or deposit. Covers: American Express Reward Dollars, Apple Daily Cash, Bank of America cash rewards, Capital One cash rewards, Amazon rewards points, Costco annual reward (Citi), Discover Cashback Bonus, U.S. Bank cash rewards.",
+      "typicalCpp": 1,
+      "valuation": {
+        "source": "Fixed by definition: 1 point = 1 cent",
+        "url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "chase_ur",
+      "name": "Chase Ultimate Rewards",
+      "kind": "transferable",
+      "unit": "points",
+      "floorCpp": 1,
+      "floorNote": "Cash back as a statement credit or deposit: 1¢ a point (statement credit), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 2.05,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "citi_thankyou",
+      "name": "Citi ThankYou Points",
+      "kind": "transferable",
+      "unit": "points",
+      "floorCpp": 1,
+      "floorNote": "Citi Travel bookings at 1¢ for every ThankYou card: 1¢ a point (portal), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 1.95,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "cnb_rewards",
+      "name": "City National Rewards Points",
+      "kind": "cash_back",
+      "unit": "points",
+      "floorCpp": 1,
+      "floorNote": "Airfare with no blackout dates through the rewards site or Award Headquarters. Reported values were 1.2¢ online and 1.1¢ through the concierge after an October 2019 devaluation, with a booking fee lowering the effective value; no current figure is published, so these are dated estimates: 1¢ a point…",
+      "typicalCpp": 1,
+      "valuation": {
+        "source": "cnb.com (OCCB value set)",
+        "url": "https://www.cnb.com/content/dam/cnb/personal-banking/lending/credit-cards/documents/Rewards-Program-Rules-Householding-08119.pdf",
+        "asOf": "2026-11-14"
+      },
+      "verifiedAt": "2026-11-14"
+    },
+    {
+      "slug": "delta_skymiles",
+      "name": "Delta SkyMiles",
+      "kind": "airline",
+      "unit": "miles",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 1.2,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "hilton_honors",
+      "name": "Hilton Honors",
+      "kind": "hotel",
+      "unit": "points",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 0.4,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "ihg_one",
+      "name": "IHG One Rewards",
+      "kind": "hotel",
+      "unit": "points",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 0.6,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "marriott_bonvoy",
+      "name": "Marriott Bonvoy",
+      "kind": "hotel",
+      "unit": "points",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 0.75,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "southwest_rr",
+      "name": "Southwest Rapid Rewards",
+      "kind": "airline",
+      "unit": "points",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 1.25,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "united_mileageplus",
+      "name": "United MileagePlus",
+      "kind": "airline",
+      "unit": "miles",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 1.2,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "usbank_altitude",
+      "name": "U.S. Bank Altitude Points",
+      "kind": "cash_back",
+      "unit": "points",
+      "floorCpp": 1,
+      "floorNote": "Statement credit or deposit to a U.S. Bank account: 1¢ a point (statement credit), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 1.6,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "wells_fargo_rewards",
+      "name": "Wells Fargo Rewards",
+      "kind": "transferable",
+      "unit": "points",
+      "floorCpp": 1,
+      "floorNote": "Statement credit, deposit to a Wells Fargo account, or cash at a Wells Fargo ATM: 1¢ a point (statement credit), the best fixed rate any holder can get in OCCB.",
+      "typicalCpp": 1.8,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "world_of_hyatt",
+      "name": "World of Hyatt",
+      "kind": "hotel",
+      "unit": "points",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 1.65,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "wyndham_rewards",
+      "name": "Wyndham Rewards",
+      "kind": "hotel",
+      "unit": "points",
+      "floorCpp": 0,
+      "floorNote": "OCCB lists no fixed-value redemption open to every holder, so the floor is 0.",
+      "typicalCpp": 0.55,
+      "valuation": {
+        "source": "The Points Guy (OCCB value set)",
+        "url": "https://thepointsguy.com/guide/monthly-valuations/",
+        "asOf": "2026-11-13"
+      },
+      "verifiedAt": "2026-11-13"
+    }
+  ]
+}

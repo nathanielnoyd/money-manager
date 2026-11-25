@@ -1,0 +1,15 @@
+# Gitleaks configuration: the default rules plus this project's own token formats.
+[extend]
+useDefault = true
+
+[[rules]]
+id = "money-manager-agent-token"
+description = "Money Manager agent (MCP) token"
+regex = '''mm_pat_[A-Za-z0-9_-]{43}'''
+keywords = ["mm_pat_"]
+
+[allowlist]
+description = "Test fixtures and docs placeholders"
+regexes = ['''mm_pat_(x|A){43}''', '''mm_pat_…''']
+# The end-to-end suite's fixed keys, used only against its own throwaway database.
+paths = ['''(^|/)apps/web/playwright\.config\.ts$''']

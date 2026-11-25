@@ -1,0 +1,81 @@
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "23 4 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  gitleaks:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      # gitleaks-action lists a pull request's commits to scan only those.
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { fetch-depth: 0 }
+      - uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  codeql:
+    name: CodeQL
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      security-events: write
+      contents: read
+      # The analyze step reads the workflow run for its status report.
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: github/codeql-action/init@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+        with:
+          languages: javascript-typescript
+          queries: security-extended
+      # Uploading SARIF needs GitHub code scanning, which private repositories don't have by
+      # default. Set the repository variable CODEQL_UPLOAD=true once it's enabled (for example
+      # when the repository goes public). Either way, findings fail this job.
+      - uses: github/codeql-action/analyze@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+        with:
+          upload: ${{ vars.CODEQL_UPLOAD == 'true' && 'always' || 'never' }}
+          output: codeql-results
+      # Findings reviewed and accepted are listed, with the reason, in .github/codeql-accepted.json
+      # (matched by rule and file). Anything else fails the job.
+      - name: Fail on findings
+        run: |
+          jq -s --slurpfile accepted .github/codeql-accepted.json '
+            [.[].runs[].results[]
+              | {ruleId, path: .locations[0].physicalLocation.artifactLocation.uri,
+                 line: .locations[0].physicalLocation.region.startLine, message: .message.text}
+              | select(. as $f | $accepted[0] | any(.ruleId == $f.ruleId and .path == $f.path) | not)]
+          ' codeql-results/*.sarif > findings.json
+          jq -r '.[] | "\(.ruleId): \(.path):\(.line) \(.message)"' findings.json
+          count=$(jq length findings.json)
+          echo "CodeQL findings: $count"
+          test "$count" -eq 0
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: codeql-sarif
+          path: codeql-results/
+          retention-days: 14
+
+  audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version-file: .nvmrc }
+      - run: pnpm audit --prod --audit-level high

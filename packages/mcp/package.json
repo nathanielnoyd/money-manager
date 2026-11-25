@@ -1,0 +1,25 @@
+{
+  "name": "@mm/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --env-file-if-exists=../../.env.development ../../node_modules/vitest/vitest.mjs run"
+  },
+  "dependencies": {
+    "@mm/core": "workspace:*",
+    "@mm/db": "workspace:*",
+    "@mm/services": "workspace:*",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "drizzle-orm": "^0.45.4",
+    "vitest": "^5.1.0"
+  },
+  "license": "AGPL-3.0-or-later"
+}

@@ -1,0 +1,281 @@
+{
+  "cards": [
+    {
+      "slug": "bofa_atmos_ascent",
+      "issuer": "Bank of America",
+      "name": "Atmos Rewards Ascent Visa Signature",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "atmos_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["ALASKA AIR", "ALASKAAIR", "HAWAIIAN AIR", "HAWAIIANAIR"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": [
+            "ev_charging",
+            "gas",
+            "phone_internet",
+            "streaming",
+            "transit",
+            "rideshare"
+          ],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Cable is mapped to cat:telecom, which also includes phone service the issuer may not count. Local transit includes rideshare."
+        }
+      ],
+      "business": false,
+      "aliases": ["Atmos Ascent", "Alaska Airlines Visa Signature", "Alaska Airlines Visa"],
+      "sources": [
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/atmos-rewards-ascent-visa-card/"
+        },
+        {
+          "url": "https://onemileatatime.com/guides/atmos-rewards-ascent-visa-card"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/bank-of-america-alaska-visa-signature-cards-transitioned-to-atmos-rewards-ascent-card"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Atmos Rewards status points earned alongside the points (0.3333 per dollar, Status points from spend). Not modeled: 10% bonus with an eligible Bank of America account (10% more on all earn, which depends on a banking relationship). Renamed from the Alaska Airlines Visa Signature in August 2025, when Alaska and Hawaiian launched Atmos Rewards; existing cards converted automatically. Issuer product URL not confirmed."
+    },
+    {
+      "slug": "bofa_atmos_summit",
+      "issuer": "Bank of America",
+      "name": "Atmos Rewards Summit Visa Infinite",
+      "network": "visa",
+      "annualFee": 395,
+      "program": "atmos_rewards",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["ALASKA AIR", "ALASKAAIR", "HAWAIIAN AIR", "HAWAIIANAIR"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": ["Atmos Summit", "Alaska Airlines Visa Infinite"],
+      "sources": [
+        {
+          "url": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/atmos-rewards-summit-visa-infinite-card/benefits/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/atmos-rewards-summit-card-review/"
+        },
+        {
+          "url": "https://www.bankrate.com/credit-cards/reviews/atmos-summit-card/"
+        },
+        {
+          "url": "https://www.nextcard.com/articles/atmos-summit-card-review-benefits-annual-fee-worth-it"
+        },
+        {
+          "url": "https://www.nextcard.com/articles/earn-atmos-points-bilt-rent"
+        },
+        {
+          "url": "https://onemileatatime.com/insights/bilt-alaska-atmos-rewards"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Not modeled: 3 points on rent paid through Bilt (3x), which applies only to purchases made through bilt. Not modeled: Atmos Rewards status points earned alongside the points (0.5 per dollar, Status points from spend). Not modeled: 10% bonus with an eligible Bank of America account (10% more on all earn, which depends on a banking relationship). Launched August 2025 with Atmos Rewards. The card also earns 3 points per dollar on foreign purchases, which no spend category can express yet, so it is not modeled as an earn rule. The issuer page lists Visa Infinite car rental perks (VIP amenities, status upgrades and discounts with Avis, Hertz and National) without a tier, and roadside assistance; these are not modeled."
+    },
+    {
+      "slug": "bofa_customized_cash",
+      "issuer": "Bank of America",
+      "name": "Bank of America Customized Cash Rewards credit card",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 3,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "multiplier": 3,
+          "cap": {
+            "amount": 2500,
+            "period": "quarter"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "pick": {
+            "mode": "user_choice",
+            "eligible": [
+              "ev_charging",
+              "gas",
+              "dining",
+              "car_rental",
+              "travel",
+              "airfare",
+              "hotels",
+              "transit",
+              "portal_travel",
+              "rideshare",
+              "drugstores",
+              "home_improvement",
+              "online_shopping",
+              "phone_internet",
+              "streaming"
+            ]
+          },
+          "note": "Choice options are groups, not single categories: gas and EV charging; online shopping including cable, internet, phone plans and streaming; dining; travel; drug stores and pharmacies; home improvement and furnishings."
+        },
+        {
+          "categories": ["groceries", "wholesale_clubs"],
+          "multiplier": 2,
+          "cap": {
+            "amount": 2500,
+            "period": "quarter"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Shares the $2,500 quarterly cap with the choice category; superstores do not count as grocery stores."
+        }
+      ],
+      "business": false,
+      "aliases": ["BofA Customized Cash", "Customized Cash Rewards", "BankAmericard Cash Rewards"],
+      "sources": [
+        {
+          "url": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/"
+        },
+        {
+          "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/02/new-bofa-rewards--program-to-reach-millions-more-clients-with-ex.html"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/bank-of-america-customized-cash-rewards-credit-card"
+        },
+        {
+          "url": "https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/bofa-rewards-program-launch"
+        },
+        {
+          "url": "https://onemileatatime.com/guides/bank-of-america-preferred-rewards/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "3% choice category: choices with no matching category are left out (furniture). Not modeled: Relationship bonus (25%) (25% more on all earn, which depends on a banking relationship). Not modeled: Relationship bonus (50%) (50% more on all earn, which depends on a banking relationship). Not modeled: Relationship bonus (75%) (75% more on all earn, which depends on a banking relationship). Not modeled: BofA Rewards Member bonus (10%) (10% more on all earn, which depends on a banking relationship). 3% choice category and 2% grocery stores and wholesale clubs share one cap; each is capped separately here. OCCB doesn't state a foreign transaction fee; 3% is assumed."
+    },
+    {
+      "slug": "bofa_premium_rewards",
+      "issuer": "Bank of America",
+      "name": "Bank of America Premium Rewards credit card",
+      "network": "visa",
+      "annualFee": 95,
+      "program": "bofa_points",
+      "fxFeePercent": 0,
+      "base": 1.5,
+      "earn": [
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare",
+            "dining"
+          ],
+          "multiplier": 2,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": ["BofA Premium Rewards"],
+      "sources": [
+        {
+          "url": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/"
+        },
+        {
+          "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/02/new-bofa-rewards--program-to-reach-millions-more-clients-with-ex.html"
+        },
+        {
+          "url": "https://frequentmiler.com/bank-of-america-premium-rewards-credit-card-complete-guide/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-credit-card/"
+        },
+        {
+          "url": "https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/bofa-rewards-program-launch"
+        },
+        {
+          "url": "https://onemileatatime.com/guides/bank-of-america-preferred-rewards/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Relationship bonus (25%) (25% more on all earn, which depends on a banking relationship). Not modeled: Relationship bonus (50%) (50% more on all earn, which depends on a banking relationship). Not modeled: Relationship bonus (75%) (75% more on all earn, which depends on a banking relationship). Not modeled: BofA Rewards Member bonus (10%) (10% more on all earn, which depends on a banking relationship)."
+    },
+    {
+      "slug": "bofa_premium_rewards_elite",
+      "issuer": "Bank of America",
+      "name": "Bank of America Premium Rewards Elite credit card",
+      "network": "visa",
+      "annualFee": 550,
+      "program": "bofa_points",
+      "fxFeePercent": 0,
+      "base": 1.5,
+      "earn": [
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare",
+            "dining"
+          ],
+          "multiplier": 2,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": ["BofA Premium Rewards Elite", "Premium Rewards Elite"],
+      "sources": [
+        {
+          "url": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/"
+        },
+        {
+          "url": "https://awardwallet.com/blog/bank-of-america-premium-rewards-elite-review/"
+        },
+        {
+          "url": "https://thepointcalculator.com/us/travel/boapts/bank-of-america-premium-rewards-elite-credit-card-calculator"
+        },
+        {
+          "url": "https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/bofa-rewards-program-launch"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Not modeled: BofA Rewards Member bonus (10%) (10% more on all earn, which depends on a banking relationship). Not modeled: Relationship bonus (25%) (25% more on all earn, which depends on a banking relationship). Not modeled: Relationship bonus (50%) (50% more on all earn, which depends on a banking relationship). Not modeled: Relationship bonus (75%) (75% more on all earn, which depends on a banking relationship). The issuer page also lists Visa Infinite Luxury Hotel Collection, Visa Infinite car rental perks (status upgrades and discounts with rental partners), roadside assistance and a concierge, without amounts; these are not modeled."
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "cards": [
+    {
+      "slug": "citi_aadvantage_executive",
+      "issuer": "Citi",
+      "name": "Citi / AAdvantage Executive World Legend Mastercard",
+      "network": "mastercard",
+      "annualFee": 695,
+      "program": "aa_aadvantage",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["AMERICAN AIRLINES", "AMERICAN AIR", "AA.COM"],
+          "multiplier": 4,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": [
+        "Citi AAdvantage Executive",
+        "AAdvantage Executive World Elite Mastercard",
+        "Citi AA Executive"
+      ],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/citi/citi-aadvantage-executive-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/"
+        },
+        {
+          "url": "https://news.aa.com/news/news-details/2023/American-Airlines-and-Citi-enhance-the-Citi-AAdvantage-Executive-World-Elite-Mastercard-with-more-benefits-AADV-07/default.aspx"
+        },
+        {
+          "url": "https://worldairlinenews.com/2026/08/03/american-airlines-and-citi-elevate-premium-travel-with-enhanced-citi-aadvantage-executive-world-legend-mastercard/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/citi-aadvantage-executive-card-changes-higher-fee-new-benefits/"
+        },
+        {
+          "url": "https://awardwallet.com/news/american-aadvantage/citi-aadvantage-executive-card-2026-refresh/"
+        },
+        {
+          "url": "https://frequentmiler.com/200-inkind-dining-benefit-added-to-citi-aadvantage-executive-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Extra 1x on American after $150,000 a year (1x), which applies only to spending after the first $150,000 a year. Not modeled: AAdvantage Hotels and Cars (12x): a booking site the app can't recognize. Not modeled: AAdvantage Loyalty Points earned alongside the points (1 per dollar, Loyalty Points on purchases)."
+    },
+    {
+      "slug": "citi_aadvantage_globe",
+      "issuer": "Citi",
+      "name": "Citi / AAdvantage Globe Mastercard",
+      "network": "mastercard",
+      "annualFee": 350,
+      "program": "aa_aadvantage",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["AMERICAN AIRLINES", "AMERICAN AIR", "AA.COM"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Restaurants, including takeout and delivery."
+        },
+        {
+          "categories": ["rideshare", "transit"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Taxis, rideshares and public transit, per Citi's Rides and Rails definition."
+        }
+      ],
+      "business": false,
+      "aliases": ["Citi AAdvantage Globe", "AAdvantage Globe", "Citi AA Globe"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-aadvantage-globe-mastercard"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/citi-aadvantage-globe-mastercard-launch"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/citi-aadvantage-globe-card-launches/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Not modeled: 6x on AAdvantage Hotels bookings (6x): a booking site the app can't recognize. Not modeled: AAdvantage Loyalty Points earned alongside the points (1 per dollar, Loyalty Points on purchases). Launched October 19, 2025, between the Platinum Select and the Executive. No changes to the card had been announced as of November 2026; the October 2026 refresh of the Platinum Select and AAdvantage Business did not include it. Authorized users are free. No foreign transaction fees."
+    },
+    {
+      "slug": "citi_aadvantage_platinum_select",
+      "issuer": "Citi",
+      "name": "Citi / AAdvantage Platinum Select World Elite Mastercard",
+      "network": "mastercard",
+      "annualFee": 99,
+      "program": "aa_aadvantage",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["AMERICAN AIRLINES", "AMERICAN AIR", "AA.COM"],
+          "multiplier": 2,
+          "channel": "any"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any"
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 2,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": ["Citi AAdvantage Platinum Select", "Citi AA Platinum"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-aadvantage-platinum-select-world-elite-mastercard"
+        },
+        {
+          "url": "https://citi.com/credit-cards/credit-card-miles/aadvantage-platinum-select-benefits"
+        },
+        {
+          "url": "https://creditcards.aa.com/citi-platinum-card-american-airlines-cardmember"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reasons-to-get-citi-aadvantage-platinum/"
+        },
+        {
+          "url": "https://help.turo.com/en_us/turo-partnership-with-citibank-and-american-airlines-us-guests-ByT_aHK0gg.md"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/citi-aadvantage-card-changes-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: AAdvantage Loyalty Points earned alongside the points (1 per dollar, Loyalty Points on purchases). Changes announced for 2027-01-24 are not reflected yet."
+    },
+    {
+      "slug": "citi_costco_anywhere",
+      "issuer": "Citi",
+      "name": "Costco Anywhere Visa Card by Citi",
+      "network": "visa",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["gas"],
+          "merchants": ["COSTCO GAS"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 7000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Gas at Costco warehouses worldwide. Shares a $7,000 annual cap with the 4% gas and EV rule, then 1%."
+        },
+        {
+          "categories": ["ev_charging", "gas"],
+          "multiplier": 4,
+          "cap": {
+            "amount": 7000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Eligible gas and EV charging worldwide. Gas or fuel at superstores, supermarkets, convenience stores and warehouse clubs other than Costco may not qualify."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Certain bakeries, department store restaurants and restaurants in grocery stores or warehouse clubs earn 1%."
+        },
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Includes Costco Travel. Timeshares, campgrounds, bed and breakfasts, and train or commuter travel earn 1%; that exclusion of transit is not modeled."
+        },
+        {
+          "categories": ["wholesale_clubs"],
+          "merchants": ["COSTCO"],
+          "multiplier": 2,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": ["Costco Citi card", "Costco Anywhere Visa"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-costco-anywhere-visa-credit-card"
+        },
+        {
+          "url": "https://www.nerdwallet.com/travel/learn/the-guide-to-citi-credit-card-travel-insurance"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "5% on gas at Costco and 4% on other gas and EV charging share one cap; each is capped separately here. Requires an active, paid Costco membership in the cardmember's name; the card doubles as the Costco membership ID."
+    },
+    {
+      "slug": "citi_custom_cash",
+      "issuer": "Citi",
+      "name": "Citi Custom Cash Card",
+      "network": "mastercard",
+      "annualFee": 0,
+      "program": "citi_thankyou",
+      "fxFeePercent": 3,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "multiplier": 5,
+          "cap": {
+            "amount": 500,
+            "period": "month"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "pick": {
+            "mode": "top_spend",
+            "eligible": [
+              "dining",
+              "gas",
+              "groceries",
+              "streaming",
+              "drugstores",
+              "home_improvement",
+              "fitness",
+              "entertainment",
+              "airfare",
+              "hotels",
+              "travel",
+              "transit",
+              "rideshare"
+            ]
+          },
+          "note": "5% on the first $500 spent each billing cycle in the single top eligible category, then 1%. Citi's ten categories are restaurants, gas stations, grocery stores, select travel (airlines, hotels, cruise lines, travel agencies), select transit (commuter transit, rideshare, taxis, parking, tolls), sele…"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "An additional 4% (5% total, up to 9% when travel is also the top category) on hotels, car rentals and attractions booked through Citi Travel. Launched with an end date of June 30, 2026; Citi removed the end date and one review (updated September 2026) calls it permanent since May 18, 2025, but othe…"
+        }
+      ],
+      "business": false,
+      "aliases": ["Custom Cash"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card"
+        },
+        {
+          "url": "https://awardwallet.com/news/citi-thankyou-rewards/citi-custom-cash-closed-new-applications/"
+        },
+        {
+          "url": "https://frequentmiler.com/citi-custom-cash-complete-guide"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/citi-permanent-5x-earnings-double-cash-custom-cash/"
+        },
+        {
+          "url": "https://awardwallet.com/blog/citi-custom-cash-travel-portal-spending-bonus"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "No longer open to new applicants (since 2026-05-28). The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Citi Travel hotels and Citi Travel car rentals and Citi Travel attractions (4x). The cap on 5% in the top eligible category resets each statement; it is counted per month here. Closed to new applications on May 28, 2026; existing cardmembers keep their terms, and some report product changes into it are still possible. Earns ThankYou points as cash back. 3% foreign transaction fee. On its own it reaches only a few transfer partners at reduced ratios; points moved to a Strata Premier, Strata Elite or legacy Prestige/Premier account transfer at full ratios, including to American AAdvantage (partner since July 27, 2025)."
+    },
+    {
+      "slug": "citi_double_cash",
+      "issuer": "Citi",
+      "name": "Citi Double Cash Card",
+      "network": "mastercard",
+      "annualFee": 0,
+      "program": "citi_thankyou",
+      "fxFeePercent": 3,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "2% base plus an extra 3% on hotels, car rentals and attractions booked through Citi Travel. Launched as a limited-time offer ending December 31, 2025; Citi removed the end date, and reviews report it as permanent since May 18, 2025. Citi's page lists no end date as of 2026-11-13."
+        }
+      ],
+      "business": false,
+      "aliases": ["Double Cash"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/citi/citi-double-cash/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/citi-permanent-5x-earnings-double-cash-custom-cash/"
+        },
+        {
+          "url": "https://awardwallet.com/blog/citi-custom-cash-travel-portal-spending-bonus"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Citi Travel hotels and Citi Travel car rentals and Citi Travel attractions (5x). Earns ThankYou points: 1 when you buy and 1 when you pay. 3% foreign transaction fee. On its own the card reaches only a few transfer partners at reduced ratios (generally 1,000 to 700 or 1,000 to 800); points moved to a Strata Premier, Strata Elite or legacy Prestige/Premier account transfer at full ratios, including to American AAdvantage (partner since July 27, 2025)."
+    },
+    {
+      "slug": "citi_prestige",
+      "issuer": "Citi",
+      "name": "Citi Prestige Card",
+      "network": "mastercard",
+      "annualFee": 495,
+      "program": "citi_thankyou",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare", "travel"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Airlines and travel agencies. Travel agencies are modeled with cat:travel.other (merchant category 4722, which also holds 4789 transportation services). Whether bookings through Citi Travel earn 5x is not confirmed, so portal categories are not included."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "Restaurants, including takeout and delivery."
+        },
+        {
+          "categories": ["hotels", "travel"],
+          "multiplier": 3,
+          "channel": "any"
+        }
+      ],
+      "business": false,
+      "aliases": ["Prestige", "Citi Prestige"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-prestige-credit-card"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/citi-prestige-credit-card-review/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/citi/citi-prestige-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/citi-prestige-card/"
+        },
+        {
+          "url": "https://awardwallet.com/credit-cards/citi-thankyou-rewards/citi-prestige/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/?p=173784"
+        },
+        {
+          "url": "https://www.bankrate.com/credit-cards/reviews/citi-prestige-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "No longer open to new applicants (since 2021-07-01). Approximated: the 3x rate on cruises counts for all other travel. Citi stopped taking applications on July 1, 2021 and product changes into the card on June 19, 2021; existing accounts remain open with the terms modeled here. A premium ThankYou card: points in a Prestige account transfer to partners at full ratios, like the Strata Premier and Strata Elite. Its premium-tier successor is the Strata Elite (launched July 27, 2025), but Prestige accounts were not converted. Reviews say the card carries no trip, baggage, rental car or shopping protections apart from cell phone protection. No foreign transaction fees."
+    },
+    {
+      "slug": "citi_strata_elite",
+      "issuer": "Citi",
+      "name": "Citi Strata Elite Card",
+      "network": "mastercard",
+      "annualFee": 595,
+      "program": "citi_thankyou",
+      "fxFeePercent": 0,
+      "base": 1.5,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 12,
+          "channel": "portal"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 6,
+          "channel": "portal"
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Restaurants, including restaurant delivery, outside the Citi Nights window."
+        }
+      ],
+      "business": false,
+      "aliases": ["Strata Elite"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card"
+        },
+        {
+          "url": "https://frequentmiler.com/citi-strata-elite-review/"
+        },
+        {
+          "url": "https://awardwallet.com/blog/citi-strata-elite-card-review"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/citi-strata-elite-review"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/citi-announces-new-strata-elite-card-premium-card-set-to-launch-in-q3-2025/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Citi Nights dining (6x), which depends on the citi nights window, which the app can't see. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Citi Travel hotels and Citi Travel car rentals and Citi Travel attractions (12x); Citi Travel flights (6x). Launched July 27, 2025. A premium ThankYou card: unlocks full-ratio transfers to every partner, including American AAdvantage (added the same day). No foreign transaction fees."
+    },
+    {
+      "slug": "citi_strata_premier",
+      "issuer": "Citi",
+      "name": "Citi Strata Premier Card",
+      "network": "mastercard",
+      "annualFee": 95,
+      "program": "citi_thankyou",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 10,
+          "channel": "portal"
+        },
+        {
+          "categories": ["airfare", "hotels"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Air travel and hotel purchases, including flights booked on Citi Travel. Other travel (cruises, rail, rideshare) earns 1x."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 3,
+          "channel": "portal",
+          "note": "Air travel and hotel purchases, including flights booked on Citi Travel. Other travel (cruises, rail, rideshare) earns 1x."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any"
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Supermarkets; excludes general merchandise stores and warehouse clubs. Uncapped."
+        },
+        {
+          "categories": ["ev_charging", "gas"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Gas stations and EV charging stations; reports say gas at warehouse clubs is excluded."
+        }
+      ],
+      "business": false,
+      "aliases": ["Strata Premier", "Citi Premier", "Citi Premier Card"],
+      "sources": [
+        {
+          "url": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card"
+        },
+        {
+          "url": "https://frequentmiler.com/citi-strata-premier-credit-card-review/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/credit-cards/citi-strata-premier-launches-as-a-refresh-of-its-predecessor"
+        },
+        {
+          "url": "https://dannydealguru.com/citi-strata-premier-card-review/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Citi Travel hotels and Citi Travel car rentals and Citi Travel attractions (10x); Citi Travel flights (3x). Replaced the Citi Premier in May 2024; existing Premier accounts were converted. One of the premium ThankYou cards that unlock full-ratio transfers to every partner, including American AAdvantage (added July 27, 2025); points pooled from a Double Cash, Custom Cash or Strata account transfer at full ratios through it."
+    }
+  ]
+}

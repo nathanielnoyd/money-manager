@@ -1,0 +1,1551 @@
+{
+  "cards": [
+    {
+      "slug": "amex_blue_business_cash",
+      "issuer": "American Express",
+      "name": "Blue Business Cash Card",
+      "network": "amex",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 2.7,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [
+            "dining",
+            "groceries",
+            "online_groceries",
+            "wholesale_clubs",
+            "superstores",
+            "gas",
+            "ev_charging",
+            "transit",
+            "rideshare",
+            "airfare",
+            "hotels",
+            "car_rental",
+            "travel",
+            "portal_travel",
+            "streaming",
+            "entertainment",
+            "drugstores",
+            "home_improvement",
+            "online_shopping",
+            "utilities",
+            "phone_internet",
+            "office_supply",
+            "shipping",
+            "advertising",
+            "fitness",
+            "everything_else"
+          ],
+          "multiplier": 2,
+          "cap": {
+            "amount": 50000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any"
+        }
+      ],
+      "business": true,
+      "aliases": ["Amex Blue Business Cash", "BBC"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/blue-business-cash-credit-card-amex/"
+        },
+        {
+          "url": "https://onemileatatime.com/insights/american-express-blue-business-card-worth-it/"
+        },
+        {
+          "url": "https://thepointsparty.com/articles/amex-blue-business-plus-cash-welcome-offers"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "2.7% foreign transaction fee. Expanded Buying Power lets the account spend above its credit limit (amounts above the limit due in full). Cash back is credited to the statement automatically."
+    },
+    {
+      "slug": "amex_blue_business_plus",
+      "issuer": "American Express",
+      "name": "Blue Business Plus Card",
+      "network": "amex",
+      "annualFee": 0,
+      "program": "amex_mr",
+      "fxFeePercent": 2.7,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [
+            "dining",
+            "groceries",
+            "online_groceries",
+            "wholesale_clubs",
+            "superstores",
+            "gas",
+            "ev_charging",
+            "transit",
+            "rideshare",
+            "airfare",
+            "hotels",
+            "car_rental",
+            "travel",
+            "portal_travel",
+            "streaming",
+            "entertainment",
+            "drugstores",
+            "home_improvement",
+            "online_shopping",
+            "utilities",
+            "phone_internet",
+            "office_supply",
+            "shipping",
+            "advertising",
+            "fitness",
+            "everything_else"
+          ],
+          "multiplier": 2,
+          "cap": {
+            "amount": 50000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any"
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "Amex Blue Business Plus",
+        "BBP",
+        "The Blue Business Plus Credit Card from American Express"
+      ],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/blue-business-plus-credit-card-amex/"
+        },
+        {
+          "url": "https://onemileatatime.com/insights/american-express-blue-business-card-worth-it/"
+        },
+        {
+          "url": "https://thepointsparty.com/articles/amex-blue-business-plus-cash-welcome-offers"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/amex-blue-business-plus-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "2.7% foreign transaction fee. Expanded Buying Power lets the account spend above its credit limit (amounts above the limit due in full)."
+    },
+    {
+      "slug": "amex_blue_cash_everyday",
+      "issuer": "American Express",
+      "name": "Blue Cash Everyday Card",
+      "network": "amex",
+      "annualFee": 0,
+      "program": "cash_back",
+      "fxFeePercent": 2.7,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["groceries"],
+          "multiplier": 3,
+          "cap": {
+            "amount": 6000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "US supermarkets, up to $6,000 a year, then 1%; excludes superstores, warehouse clubs and specialty stores. U.S. purchases only."
+        },
+        {
+          "categories": ["online_shopping"],
+          "multiplier": 3,
+          "cap": {
+            "amount": 6000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "US online retail purchases of goods, up to $6,000 a year (separate cap), then 1%; Amex excludes travel, restaurants, services and several other online purchases. U.S. purchases only."
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 3,
+          "cap": {
+            "amount": 6000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "US gas stations, up to $6,000 a year (separate cap), then 1%. U.S. purchases only."
+        }
+      ],
+      "business": false,
+      "aliases": ["Amex Blue Cash Everyday", "BCE"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/"
+        },
+        {
+          "url": "https://awardwallet.com/news/cash-back/amex-disney-streaming-credit-update/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Foreign transaction fee 2.7%. Reward Dollars redeem for statement credits, deposits to an Amex savings account, or at Amazon.com checkout."
+    },
+    {
+      "slug": "amex_blue_cash_preferred",
+      "issuer": "American Express",
+      "name": "Blue Cash Preferred Card",
+      "network": "amex",
+      "annualFee": 95,
+      "program": "cash_back",
+      "fxFeePercent": 2.7,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["groceries"],
+          "multiplier": 6,
+          "cap": {
+            "amount": 6000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "US supermarkets only, up to $6,000 a year, then 1%; excludes superstores, warehouse clubs and specialty stores. U.S. purchases only."
+        },
+        {
+          "categories": ["streaming"],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Select US streaming subscriptions on an Amex-published list of 30+ services (AMC+, BritBox, Discovery+, MGM+ and Starz added January 30, 2025). No cap. Bundled or third-party-billed purchases may not qualify. U.S. purchases only."
+        },
+        {
+          "categories": ["transit", "rideshare"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Transit includes taxis and rideshare, parking, tolls, trains, buses and more. No cap."
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "US gas stations; superstore and warehouse-club stations generally excluded. No cap. U.S. purchases only."
+        }
+      ],
+      "business": false,
+      "aliases": ["Amex Blue Cash Preferred", "BCP"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/american-express-blue-cash-preferred/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/amex-expands-streaming-blue-cash-preferred-card/"
+        },
+        {
+          "url": "https://doctorofcredit.com/american-express-blue-cash-preferred-card-84-yearly-disney-credit"
+        },
+        {
+          "url": "https://awardwallet.com/news/cash-back/amex-disney-streaming-credit-update/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/blue-cash-preferred-increases-disney-bundle-credit"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Foreign transaction fee 2.7%. Reward Dollars redeem for statement credits, deposits to an Amex savings account, or at Amazon.com checkout."
+    },
+    {
+      "slug": "amex_business_gold",
+      "issuer": "American Express",
+      "name": "Business Gold Card",
+      "network": "amex",
+      "annualFee": 375,
+      "program": "amex_mr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [],
+          "multiplier": 4,
+          "cap": {
+            "amount": 150000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "pick": {
+            "mode": "top_spend",
+            "eligible": ["dining", "gas", "advertising", "transit", "rideshare"]
+          },
+          "note": "Six Amex categories: U.S. restaurants (incl. takeout and delivery); U.S. gas stations; U.S. advertising in select media (online, TV, radio); U.S. electronic goods retailers and software and cloud providers (one category); U.S."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 3,
+          "channel": "portal"
+        }
+      ],
+      "business": true,
+      "aliases": ["Amex Business Gold", "American Express Business Gold Card"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/"
+        },
+        {
+          "url": "https://frequentmiler.com/american-express-business-gold-credit-card-review/"
+        },
+        {
+          "url": "https://www.cnbc.com/select/amex-business-gold-changes/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/amex-business-platinum-pay-with-points-changes/"
+        },
+        {
+          "url": "https://thriftytraveler.com/news/credit-card/amex-business-gold-squarespace-credit/"
+        },
+        {
+          "url": "https://thepointsparty.com/articles/amex-business-gold-platinum-300-chatgpt-credit-spring-2026"
+        },
+        {
+          "url": "https://frequentmiler.com/fedex-being-removed-from-flexible-business-credit-on-american-express-business-gold-card-from-10-1-26/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "4x in top two categories: choices with no matching category are left out (telecom wireless, Electronics, software and cloud). 4x in top two categories: the issuer applies it to 2 categories at once; the app counts only the top one. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Amex Travel flights and Amex Travel prepaid hotels (3x). Changes announced for 2027-02-17 are not reflected yet. No lounge access. The 25% Pay with Points airline rebate was removed in the February 2024 refresh. Employee Business Expense Cards are free."
+    },
+    {
+      "slug": "amex_business_platinum",
+      "issuer": "American Express",
+      "name": "Business Platinum Card",
+      "network": "amex",
+      "annualFee": 895,
+      "program": "amex_mr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Flights and prepaid hotels (including Fine Hotels + Resorts) booked on AmexTravel.com or the Amex Travel app."
+        },
+        {
+          "categories": ["home_improvement", "shipping"],
+          "multiplier": 2,
+          "cap": {
+            "amount": 2000000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "U.S. construction material and hardware suppliers, electronic goods retailers, and software and cloud system providers. $2 million cap is shared with the shipping and $5,000+ purchase bonuses; only the highest bonus applies. U.S. shipping providers; shares the $2 million bonus cap."
+        }
+      ],
+      "business": true,
+      "aliases": ["Amex Business Platinum", "The Business Platinum Card from American Express"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/"
+        },
+        {
+          "url": "https://cardstack.money/articles/credit-card-reviews/amex-business-platinum-benefits-2026"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/american-express-refreshes-platinum-business-platinum-cards-895-fee-175k-200k-bonus-many-new-credits"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/amex-business-platinum/benefits-history/"
+        },
+        {
+          "url": "https://thepointsparty.com/articles/amex-business-gold-platinum-300-chatgpt-credit-spring-2026"
+        },
+        {
+          "url": "https://frequentmiler.com/amex-adding-300-chatgpt-credits-to-business-platinum-new-corporate-card-coming-too/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/clear-membership-fee-hike-2026/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/travel/news/amex-adds-airbnb-and-restricts-platinum-credit"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Purchases of $5,000 or more (2x), which applies only to purchases of $5,000 or more. The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Amex Travel flights and Amex Travel prepaid hotels (5x). Not modeled, for lack of a matching category: Electronics and computer hardware, Software and cloud services. Changes announced for 2027-01-01, 2027-02-17 are not reflected yet. Employee Business Expense Cards are free; the fee:authorized_user amount is the Employee Platinum Card fee. No foreign transaction fees."
+    },
+    {
+      "slug": "amex_delta_gold_business",
+      "issuer": "American Express",
+      "name": "Delta SkyMiles Gold Business American Express Card",
+      "network": "amex",
+      "annualFee": 150,
+      "program": "delta_skymiles",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["DELTA AIR", "DELTA.COM"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Purchases made directly with Delta."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Restaurants worldwide, including takeout and delivery in the U.S."
+        },
+        {
+          "categories": ["shipping"],
+          "multiplier": 2,
+          "cap": {
+            "amount": 50000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Eligible U.S. shipping purchases, up to $50,000 per calendar year (its own cap, separate from advertising), then 1x."
+        },
+        {
+          "categories": ["advertising"],
+          "multiplier": 2,
+          "cap": {
+            "amount": 50000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "U.S. advertising in select media (online, TV, radio), up to $50,000 per calendar year (its own cap, separate from shipping), then 1x."
+        }
+      ],
+      "business": true,
+      "aliases": ["Delta Gold Business", "Amex Delta Gold Business"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/delta-skymiles-gold-business-american-express-card/"
+        },
+        {
+          "url": "https://www.americanexpress.com/en-us/business/campaigns/employee-cards/delta-gold/5k-offer-site/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/gold-delta-skymiles-business-credit-card-american-express/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/gold-delta-skymiles-business-amex-credit-card-review"
+        },
+        {
+          "url": "https://www.nerdwallet.com/reviews/credit-cards/american-express-gold-delta-skymiles-business"
+        },
+        {
+          "url": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards"
+        },
+        {
+          "url": "https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/"
+        },
+        {
+          "url": "https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Employee cards have no annual fee. No Delta Sky Club access and no MQD Headstart or MQD-from-spend earning."
+    },
+    {
+      "slug": "amex_delta_platinum_business",
+      "issuer": "American Express",
+      "name": "Delta SkyMiles Platinum Business American Express Card",
+      "network": "amex",
+      "annualFee": 350,
+      "program": "delta_skymiles",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["DELTA AIR", "DELTA.COM"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Purchases made directly with Delta."
+        },
+        {
+          "categories": ["hotels"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Eligible purchases made directly with hotels."
+        },
+        {
+          "categories": ["transit", "rideshare", "shipping"],
+          "multiplier": 1.5,
+          "cap": {
+            "amount": 100000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Eligible transit (Amex's definition includes trains, taxis, rideshare, ferries, tolls, parking, buses and subways) and U.S. shipping providers. Shares a $100,000 combined yearly cap with large purchases (50,000 bonus miles), then 1x."
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "Delta Platinum Business",
+        "Amex Delta Platinum Business",
+        "Delta SkyMiles Business Platinum"
+      ],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/en-us/business/credit-cards/delta-skymiles-platinum/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/platinum-delta-skymiles-business-card-review/"
+        },
+        {
+          "url": "https://awardwallet.com/blog/delta-business-platinum-review"
+        },
+        {
+          "url": "https://www.nerdwallet.com/reviews/credit-cards/delta-skymiles-platinum-business-amex"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/amex-delta-credit-cards-new-benefits-2026/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/delta-amex-card-second-free-checked-bag/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Purchases of $5,000 or more (1.5x), which applies only to purchases of $5,000 or more. Not modeled: Delta Medallion Qualification Dollars earned alongside the points (0.05 per dollar, MQD Boost). Employee cards have no annual fee. No Delta Sky Club access."
+    },
+    {
+      "slug": "amex_delta_reserve",
+      "issuer": "American Express",
+      "name": "Delta SkyMiles Reserve American Express Card",
+      "network": "amex",
+      "annualFee": 650,
+      "program": "delta_skymiles",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["DELTA AIR", "DELTA.COM"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Purchases made directly with Delta."
+        }
+      ],
+      "business": false,
+      "aliases": ["Delta Reserve", "Amex Delta Reserve"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-reserve-american-express-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/delta-reserve-credit-card-american-express/"
+        },
+        {
+          "url": "https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/"
+        },
+        {
+          "url": "https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/delta-reserve-amex-credit-card-review/"
+        },
+        {
+          "url": "https://awardwallet.com/credit-cards/delta-skymiles/authorized-user-benefits"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Delta Medallion Qualification Dollars earned alongside the points (0.1 per dollar, MQD Boost)."
+    },
+    {
+      "slug": "amex_delta_reserve_business",
+      "issuer": "American Express",
+      "name": "Delta SkyMiles Reserve Business American Express Card",
+      "network": "amex",
+      "annualFee": 650,
+      "program": "delta_skymiles",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["DELTA AIR", "DELTA.COM"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Purchases made directly with Delta."
+        },
+        {
+          "categories": ["transit", "shipping", "office_supply"],
+          "multiplier": 1.5,
+          "channel": "any",
+          "note": "Eligible transit, U.S. shipping and U.S. office supply store purchases. No cap found in sources."
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "Delta Reserve Business",
+        "Amex Delta Reserve Business",
+        "Delta Reserve for Business"
+      ],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/en-us/business/credit-cards/delta-skymiles-reserve/"
+        },
+        {
+          "url": "https://www.delta.com/us/en/delta-sky-club/access"
+        },
+        {
+          "url": "https://awardwallet.com/credit-cards/delta-skymiles/delta-reserve-business/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/delta-reserve-business-credit-card-american-express/"
+        },
+        {
+          "url": "https://onemileatatime.com/delta-reserve-business-card/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/amex-delta-reserve-business-credit-card"
+        },
+        {
+          "url": "https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: 1.5x after $150,000 in a calendar year (1.5x), which applies only to spending after the first $150,000 a year. Not modeled: Delta Medallion Qualification Dollars earned alongside the points (0.1 per dollar, MQD Boost). Employee Delta SkyMiles Reserve Business Cards cost $175 a year each. Sky Club visits are issued per eligible card and add up across a person's cards (Delta FAQ). No return protection or emergency evacuation benefit was found in sources."
+    },
+    {
+      "slug": "amex_delta_skymiles_gold",
+      "issuer": "American Express",
+      "name": "Delta SkyMiles Gold American Express Card",
+      "network": "amex",
+      "annualFee": 150,
+      "program": "delta_skymiles",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["DELTA AIR", "DELTA.COM"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Purchases made directly with Delta."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Restaurants worldwide, including takeout and delivery in the U.S."
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "U.S. supermarkets only; superstores and warehouse clubs excluded."
+        }
+      ],
+      "business": false,
+      "aliases": ["Delta Gold", "Amex Delta Gold"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/gold-delta-skymiles-credit-card-american-express/"
+        },
+        {
+          "url": "https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/"
+        },
+        {
+          "url": "https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "amex_delta_skymiles_platinum",
+      "issuer": "American Express",
+      "name": "Delta SkyMiles Platinum American Express Card",
+      "network": "amex",
+      "annualFee": 350,
+      "program": "delta_skymiles",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "merchants": ["DELTA AIR", "DELTA.COM"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Purchases made directly with Delta."
+        },
+        {
+          "categories": ["hotels"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Purchases made directly with hotels."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "Restaurants worldwide, including takeout and delivery in the U.S."
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 2,
+          "channel": "any",
+          "note": "U.S. supermarkets only."
+        }
+      ],
+      "business": false,
+      "aliases": ["Delta Platinum", "Amex Delta Platinum"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/platinum-delta-skymiles-credit-card-american-express"
+        },
+        {
+          "url": "https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/"
+        },
+        {
+          "url": "https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Not modeled: Delta Medallion Qualification Dollars earned alongside the points (0.05 per dollar, MQD Boost)."
+    },
+    {
+      "slug": "amex_gold",
+      "issuer": "American Express",
+      "name": "American Express Gold Card",
+      "network": "amex",
+      "annualFee": 325,
+      "program": "amex_mr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["dining"],
+          "multiplier": 4,
+          "cap": {
+            "amount": 50000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "Restaurants worldwide, including takeout and delivery in the US; excludes restaurants inside other establishments."
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 4,
+          "cap": {
+            "amount": 25000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any",
+          "note": "US supermarkets only; excludes superstores, warehouse clubs and specialty stores. U.S. purchases only."
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Flights booked with the airline or Amex Travel."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 3,
+          "channel": "portal",
+          "note": "Flights booked with the airline or Amex Travel."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal",
+          "note": "Prepaid hotels booked through AmexTravel.com or the Amex Travel app."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 2,
+          "channel": "portal",
+          "note": "Prepaid car rentals booked through Amex Travel and cruises booked and paid through AmexTravel.com."
+        }
+      ],
+      "business": false,
+      "aliases": ["Amex Gold"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/amex-gold-card/"
+        },
+        {
+          "url": "https://awardwallet.com/news/credit-cards/american-express-gold-card-changes/"
+        },
+        {
+          "url": "https://www.bankrate.com/credit-cards/news/amex-gold-increased-annual-fee"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/amex-gold-card-new-benefits-2026/"
+        },
+        {
+          "url": "https://awardwallet.com/news/credit-cards/american-express-gold-card-refresh-2026/"
+        },
+        {
+          "url": "https://thepointsguy.com/news/american-express-gold-refresh-2026/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Amex Travel flights (3x); Amex Travel prepaid hotels (5x); Prepaid Amex Travel car rentals and cruises (2x)."
+    },
+    {
+      "slug": "amex_green",
+      "issuer": "American Express",
+      "name": "American Express Classic Green Card",
+      "network": "amex",
+      "annualFee": 150,
+      "program": "amex_mr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": [
+            "car_rental",
+            "travel",
+            "airfare",
+            "hotels",
+            "transit",
+            "portal_travel",
+            "rideshare"
+          ],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Travel includes airfare, hotels, cruises, tours, car rentals, campgrounds and vacation rentals; transit includes trains, taxis, rideshare, ferries, tolls, parking, buses and subways. No cap."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Restaurants worldwide, including takeout and delivery in the US. No cap."
+        }
+      ],
+      "business": false,
+      "aliases": ["Amex Green", "American Express Green Card", "Amex Classic Green"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/green/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/american-express-green-card/"
+        },
+        {
+          "url": "https://thepointsparty.com/articles/amex-classic-green-card-name-change"
+        },
+        {
+          "url": "https://creditodds.com/news/amex-green-card-pulled-renamed-classic-green"
+        },
+        {
+          "url": "https://awardwallet.com/credit-cards/amex-membership-rewards/amex-green-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "No longer open to new applicants (since 2026-07-23). Removed from the Amex site and closed to new applicants on July 23, 2026; existing accounts were renamed the American Express Classic Green Card on August 20, 2026 with no announced change to fees, earning or benefits. Still offered as a product change to some existing Amex cardholders. No successor had been announced as of November 13, 2026. The product URL no longer resolves to the card."
+    },
+    {
+      "slug": "amex_hilton_business",
+      "issuer": "American Express",
+      "name": "The Hilton Honors American Express Business Card",
+      "network": "amex",
+      "annualFee": 195,
+      "program": "hilton_honors",
+      "fxFeePercent": 0,
+      "base": 3,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "HILTON",
+            "HAMPTON INN",
+            "DOUBLETREE",
+            "EMBASSY SUITES",
+            "HOMEWOOD SUITES",
+            "HOME2 SUITES",
+            "WALDORF ASTORIA",
+            "CONRAD HOTEL"
+          ],
+          "multiplier": 12,
+          "channel": "any",
+          "note": "Eligible purchases made directly with hotels and resorts in the Hilton portfolio."
+        },
+        {
+          "categories": [
+            "dining",
+            "groceries",
+            "online_groceries",
+            "wholesale_clubs",
+            "superstores",
+            "gas",
+            "ev_charging",
+            "transit",
+            "rideshare",
+            "airfare",
+            "hotels",
+            "car_rental",
+            "travel",
+            "portal_travel",
+            "streaming",
+            "entertainment",
+            "drugstores",
+            "home_improvement",
+            "online_shopping",
+            "utilities",
+            "phone_internet",
+            "office_supply",
+            "shipping",
+            "advertising",
+            "fitness",
+            "everything_else"
+          ],
+          "multiplier": 5,
+          "cap": {
+            "amount": 100000,
+            "period": "calendar_year"
+          },
+          "afterCap": 3,
+          "channel": "any",
+          "note": "Other eligible purchases, on the first $100,000 of purchases each calendar year."
+        }
+      ],
+      "business": true,
+      "aliases": ["Hilton Business", "Hilton Honors Business Card", "Amex Hilton Business"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/hilton-honors-american-express-business-credit-card-amex/57460/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/hilton-business-card/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/hilton-honors-american-express-business-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/hotel/hilton/credit-card-review-hilton-honors-american-express-business-card/"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/american-express-hilton-business-changes-increased-annual-fee-195-removal-of-free-night-certificate/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/hilton-honors-amex-business-card-refresh/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "No spend-based Free Night Rewards and no Priority Pass since the March 2024 refresh. In July 2026 Amex surveyed cardholders about a possible refresh (higher fee, larger Hilton credit, free nights after spend); nothing had launched as of November 2026. Up to 99 Employee Cards at no annual fee."
+    },
+    {
+      "slug": "amex_hilton_honors",
+      "issuer": "American Express",
+      "name": "Hilton Honors American Express Card",
+      "network": "amex",
+      "annualFee": 0,
+      "program": "hilton_honors",
+      "fxFeePercent": 0,
+      "base": 3,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "HILTON",
+            "HAMPTON INN",
+            "DOUBLETREE",
+            "EMBASSY SUITES",
+            "HOMEWOOD SUITES",
+            "HOME2 SUITES",
+            "WALDORF ASTORIA",
+            "CONRAD HOTEL"
+          ],
+          "multiplier": 7,
+          "channel": "any",
+          "note": "Purchases made directly with hotels and resorts in the Hilton portfolio."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "U.S. restaurants, including takeout and delivery. U.S. purchases only."
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "U.S. supermarkets; superstores, warehouse clubs and specialty stores excluded. U.S. purchases only."
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 5,
+          "channel": "any",
+          "note": "U.S. gas stations; superstores and warehouse clubs that sell fuel excluded. U.S. purchases only."
+        }
+      ],
+      "business": false,
+      "aliases": ["Hilton Honors Amex", "Amex Hilton no annual fee card"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors/"
+        },
+        {
+          "url": "https://frequentmiler.com/hilton-honors-american-express-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "amex_hilton_honors_aspire",
+      "issuer": "American Express",
+      "name": "Hilton Honors American Express Aspire Card",
+      "network": "amex",
+      "annualFee": 550,
+      "program": "hilton_honors",
+      "fxFeePercent": 0,
+      "base": 3,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "HILTON",
+            "HAMPTON INN",
+            "DOUBLETREE",
+            "EMBASSY SUITES",
+            "HOMEWOOD SUITES",
+            "HOME2 SUITES",
+            "WALDORF ASTORIA",
+            "CONRAD HOTEL"
+          ],
+          "multiplier": 14,
+          "channel": "any",
+          "note": "Purchases made directly with hotels and resorts in the Hilton portfolio."
+        },
+        {
+          "categories": ["airfare", "car_rental"],
+          "multiplier": 7,
+          "channel": "any",
+          "note": "Flights booked directly with airlines or through Amex Travel, and car rentals booked directly with select car rental companies (not all rental companies qualify)."
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 7,
+          "channel": "portal",
+          "note": "Flights booked directly with airlines or through Amex Travel, and car rentals booked directly with select car rental companies (not all rental companies qualify)."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 7,
+          "channel": "any",
+          "note": "U.S. restaurants, including takeout and delivery. U.S. purchases only."
+        }
+      ],
+      "business": false,
+      "aliases": ["Hilton Aspire", "Amex Hilton Aspire"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/"
+        },
+        {
+          "url": "https://frequentmiler.com/?p=35649"
+        },
+        {
+          "url": "https://thriftytraveler.com/news/credit-card/hilton-aspire-card-changes/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Amex Travel flights (7x)."
+    },
+    {
+      "slug": "amex_hilton_honors_surpass",
+      "issuer": "American Express",
+      "name": "Hilton Honors American Express Surpass Card",
+      "network": "amex",
+      "annualFee": 150,
+      "program": "hilton_honors",
+      "fxFeePercent": 0,
+      "base": 3,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "HILTON",
+            "HAMPTON INN",
+            "DOUBLETREE",
+            "EMBASSY SUITES",
+            "HOMEWOOD SUITES",
+            "HOME2 SUITES",
+            "WALDORF ASTORIA",
+            "CONRAD HOTEL"
+          ],
+          "multiplier": 12,
+          "channel": "any",
+          "note": "Purchases made directly with hotels and resorts in the Hilton portfolio."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "U.S. restaurants, including takeout and delivery. U.S. purchases only."
+        },
+        {
+          "categories": ["groceries"],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "U.S. supermarkets; superstores, warehouse clubs and specialty stores excluded. U.S. purchases only."
+        },
+        {
+          "categories": ["gas"],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "U.S. gas stations. U.S. purchases only."
+        },
+        {
+          "categories": ["online_shopping"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "U.S. online retail purchases of goods; Amex excludes some merchants (for example travel and services) from this category. U.S. purchases only."
+        }
+      ],
+      "business": false,
+      "aliases": ["Hilton Surpass", "Hilton Honors Surpass", "Hilton Honors Ascend"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-surpass/"
+        },
+        {
+          "url": "https://upgradedpoints.com/news/hilton-honors-aspire-surpass-card-changes/"
+        },
+        {
+          "url": "https://frequentmiler.com/hilton-honors-american-express-surpass-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Formerly the Hilton Honors Ascend Card."
+    },
+    {
+      "slug": "amex_marriott_bonvoy_bevy",
+      "issuer": "American Express",
+      "name": "Marriott Bonvoy Bevy American Express Card",
+      "network": "amex",
+      "annualFee": 250,
+      "program": "marriott_bonvoy",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "MARRIOTT",
+            "RITZ-CARLTON",
+            "RITZ CARLTON",
+            "ST. REGIS",
+            "ST REGIS",
+            "WESTIN",
+            "SHERATON",
+            "W HOTEL",
+            "LE MERIDIEN",
+            "RENAISSANCE HOTEL",
+            "AUTOGRAPH COLLECTION",
+            "TRIBUTE PORTFOLIO",
+            "LUXURY COLLECTION",
+            "EDITION HOTEL",
+            "GAYLORD",
+            "DELTA HOTEL",
+            "COURTYARD",
+            "RESIDENCE INN",
+            "FAIRFIELD INN",
+            "SPRINGHILL SUITES",
+            "TOWNEPLACE",
+            "FOUR POINTS",
+            "ALOFT",
+            "MOXY",
+            "AC HOTEL"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Eligible purchases at hotels participating in Marriott Bonvoy."
+        },
+        {
+          "categories": ["dining", "groceries"],
+          "multiplier": 4,
+          "cap": {
+            "amount": 15000,
+            "period": "calendar_year"
+          },
+          "afterCap": 2,
+          "channel": "any",
+          "note": "Restaurants worldwide; 4x on up to $15,000 of combined restaurant and US supermarket purchases each calendar year, then 2x. US supermarkets only; 4x on up to $15,000 of combined restaurant and US supermarket purchases each calendar year, then 2x. U.S. purchases only."
+        }
+      ],
+      "business": false,
+      "aliases": ["Bonvoy Bevy", "Marriott Bevy", "Amex Marriott Bevy"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-bevy/"
+        },
+        {
+          "url": "https://www.thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bevy-american-express-card-review/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/amex-marriott-bonvoy-credit-card"
+        },
+        {
+          "url": "https://maxrewards.com/credit-cards/marriott-bonvoy-bevy-american-express"
+        },
+        {
+          "url": "https://dealspoints.com/amex-marriott-bonvoy-bevy/"
+        },
+        {
+          "url": "https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "Launched in September 2022 alongside the refreshed Brilliant. Unlike the Brilliant and Business cards, it has no free night after each renewal; its only Free Night Award comes from calendar-year spend. Amex Offers are not modeled."
+    },
+    {
+      "slug": "amex_marriott_bonvoy_brilliant",
+      "issuer": "American Express",
+      "name": "Marriott Bonvoy Brilliant American Express Card",
+      "network": "amex",
+      "annualFee": 650,
+      "program": "marriott_bonvoy",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "MARRIOTT",
+            "RITZ-CARLTON",
+            "RITZ CARLTON",
+            "ST. REGIS",
+            "ST REGIS",
+            "WESTIN",
+            "SHERATON",
+            "W HOTEL",
+            "LE MERIDIEN",
+            "RENAISSANCE HOTEL",
+            "AUTOGRAPH COLLECTION",
+            "TRIBUTE PORTFOLIO",
+            "LUXURY COLLECTION",
+            "EDITION HOTEL",
+            "GAYLORD",
+            "DELTA HOTEL",
+            "COURTYARD",
+            "RESIDENCE INN",
+            "FAIRFIELD INN",
+            "SPRINGHILL SUITES",
+            "TOWNEPLACE",
+            "FOUR POINTS",
+            "ALOFT",
+            "MOXY",
+            "AC HOTEL"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Eligible purchases at hotels participating in Marriott Bonvoy."
+        },
+        {
+          "categories": ["dining"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Restaurants worldwide."
+        },
+        {
+          "categories": ["airfare"],
+          "multiplier": 3,
+          "channel": "any",
+          "note": "Flights booked directly with airlines."
+        }
+      ],
+      "business": false,
+      "aliases": ["Bonvoy Brilliant", "Marriott Brilliant", "Starwood Preferred Guest Luxury"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/reviews/credit-cards/marriott-bonvoy-brilliant"
+        }
+      ],
+      "verifiedAt": "2026-11-13"
+    },
+    {
+      "slug": "amex_marriott_bonvoy_business",
+      "issuer": "American Express",
+      "name": "Marriott Bonvoy Business American Express Card",
+      "network": "amex",
+      "annualFee": 125,
+      "program": "marriott_bonvoy",
+      "fxFeePercent": 0,
+      "base": 2,
+      "earn": [
+        {
+          "categories": ["hotels"],
+          "merchants": [
+            "MARRIOTT",
+            "RITZ-CARLTON",
+            "RITZ CARLTON",
+            "ST. REGIS",
+            "ST REGIS",
+            "WESTIN",
+            "SHERATON",
+            "W HOTEL",
+            "LE MERIDIEN",
+            "RENAISSANCE HOTEL",
+            "AUTOGRAPH COLLECTION",
+            "TRIBUTE PORTFOLIO",
+            "LUXURY COLLECTION",
+            "EDITION HOTEL",
+            "GAYLORD",
+            "DELTA HOTEL",
+            "COURTYARD",
+            "RESIDENCE INN",
+            "FAIRFIELD INN",
+            "SPRINGHILL SUITES",
+            "TOWNEPLACE",
+            "FOUR POINTS",
+            "ALOFT",
+            "MOXY",
+            "AC HOTEL"
+          ],
+          "multiplier": 6,
+          "channel": "any",
+          "note": "Eligible purchases at hotels participating in Marriott Bonvoy."
+        },
+        {
+          "categories": ["dining", "gas", "phone_internet", "shipping"],
+          "multiplier": 4,
+          "channel": "any",
+          "note": "Restaurants worldwide, US gas stations, wireless telephone services bought directly from US providers, and US purchases for shipping. No cap. Gas, wireless and shipping must be US merchants."
+        }
+      ],
+      "business": true,
+      "aliases": [
+        "Marriott Bonvoy Business Amex",
+        "Amex Marriott Business",
+        "Starwood Preferred Guest Business"
+      ],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/marriott-bonvoy-business-american-express-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-business-amex-credit-card-review/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/marriott-bonvoy-business-amex-review/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/marriott-bonvoy-business-card/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/reviews/credit-cards/marriott-bonvoy-business"
+        },
+        {
+          "url": "https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "Approximated: the 4x rate on wireless phone service counts for all phone & internet. Also gives 7% off standard room rates booked direct at participating Marriott hotels (Amex Business Card Rate), modeled as a benefit. Amex Offers are not modeled. Additional (employee) cards carry no fee."
+    },
+    {
+      "slug": "amex_platinum",
+      "issuer": "American Express",
+      "name": "Platinum Card",
+      "network": "amex",
+      "annualFee": 895,
+      "program": "amex_mr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 500000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 500000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "portal"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal"
+        }
+      ],
+      "business": false,
+      "aliases": [],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/platinum/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/credit-cards/news/amex-platinum-hikes-fee-adds-hundreds-in-credits"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/"
+        },
+        {
+          "url": "https://thepointsguy.com/credit-cards/amex-platinum-2025-refresh/"
+        },
+        {
+          "url": "https://dannydealguru.com/amex-platinum-cards-getting-600-fhr-credit/?amp=1"
+        },
+        {
+          "url": "https://www.doctorofcredit.com/american-express-to-remove-100-saks-benefit-on-platinum-card/"
+        },
+        {
+          "url": "https://frequentmiler.com/amex-removes-saks-benefit-for-new-platinum-cardholders-cardholders-prior-to-3-26-unaffected/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Amex Travel flights (5x); Amex Travel prepaid hotels (5x). The shared cap on Flights booked with the airline, Amex Travel flights is counted separately for each part of it here. Changes announced for 2027-01-01 are not reflected yet."
+    },
+    {
+      "slug": "amex_platinum_morgan_stanley",
+      "issuer": "American Express",
+      "name": "Platinum Card Exclusively for Morgan Stanley",
+      "network": "amex",
+      "annualFee": 895,
+      "program": "amex_mr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 500000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 500000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "portal"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal"
+        }
+      ],
+      "business": false,
+      "aliases": ["Morgan Stanley Platinum", "Amex Platinum for Morgan Stanley"],
+      "sources": [
+        {
+          "url": "https://apply.americanexpress.com/amex-morgan-stanley-credit-cards/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/amex-platinum-card-for-morgan-stanley"
+        },
+        {
+          "url": "https://frequentmiler.com/amxplatms/"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-13",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Amex Travel flights (5x); Amex Travel prepaid hotels (5x). The shared cap on Flights booked with the airline, Amex Travel flights is counted separately for each part of it here. Changes announced for 2027-01-01 are not reflected yet. Requires an eligible Morgan Stanley or E*TRADE account. Two terms depend on that relationship and can't be expressed yet (roadmap: outside relationships): Membership Rewards points can be deposited into a Morgan Stanley brokerage account at 1 cent each, and Platinum CashPlus clients get an $895 annual engagement bonus."
+    },
+    {
+      "slug": "amex_platinum_schwab",
+      "issuer": "American Express",
+      "name": "The Platinum Card from American Express Exclusively for Charles Schwab",
+      "network": "amex",
+      "annualFee": 895,
+      "program": "amex_mr",
+      "fxFeePercent": 0,
+      "base": 1,
+      "earn": [
+        {
+          "categories": ["airfare"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 500000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "any"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "cap": {
+            "amount": 500000,
+            "period": "calendar_year"
+          },
+          "afterCap": 1,
+          "channel": "portal"
+        },
+        {
+          "categories": ["portal_travel"],
+          "multiplier": 5,
+          "channel": "portal"
+        }
+      ],
+      "business": false,
+      "aliases": ["Schwab Platinum", "Amex Platinum for Schwab", "Amex Schwab Platinum"],
+      "sources": [
+        {
+          "url": "https://www.americanexpress.com/us/credit-cards/card/schwab-platinum/"
+        },
+        {
+          "url": "https://www.uscreditcardguide.com/amex-platinum-card-for-Schwab/"
+        },
+        {
+          "url": "https://upgradedpoints.com/credit-cards/reviews/american-express-platinum-card-for-schwab/"
+        },
+        {
+          "url": "https://frequentmiler.com/which-is-the-best-amex-platinum-card/"
+        },
+        {
+          "url": "https://www.nerdwallet.com/credit-cards/news/amex-platinum-hikes-fee-adds-hundreds-in-credits"
+        },
+        {
+          "url": "https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/"
+        }
+      ],
+      "verifiedAt": "2026-11-14",
+      "notes": "The app can't tell booking types apart on the issuer's travel site, so the best of these rates applies to every booking there: Amex Travel flights (5x); Amex Travel prepaid hotels (5x). The shared cap on Flights booked with the airline, Amex Travel flights is counted separately for each part of it here. Changes announced for 2027-01-01 are not reflected yet."
+    }
+  ]
+}
